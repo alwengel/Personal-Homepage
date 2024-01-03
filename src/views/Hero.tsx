@@ -17,7 +17,42 @@ import { transition } from "../utils/transition";
 import { fadeIn, scale } from "../utils/variants";
 
 const Hero = () => {
-  return <div>Hero</div>;
+  return <div 
+    id="home"
+    className="min-h-screen flex items-center justify-center relative"
+    style={{
+      background: `url(${homePageImg})`,
+      backgroundPosition: "center",
+      backgroundRepeat: "no repeat",
+      backgroundSize: "cover",
+    }}
+  >
+    <div className="max-w-screen-2xl flex flex-col
+    xl:flex-row xl:justify-between items-center xl.items-start gap-12 w-full py-16 px-12">
+      <div className="w-full xl:w-fit">
+        <h1 className="w-full xl:w-fit text-center xl:text-start text-4xl sm:text-6xl lg:text-8xl
+          font-bolt text-textPrimary uppercase"
+        >
+          Creative
+          <br />
+          <span className="text-secondary">
+            <Typewriter 
+              words={["Developer, Designer, Musician"]}
+              cursor
+              cursorStyle="_"
+              typeSpeed={250}
+              deleteSpeed={150}
+              loop
+            ></Typewriter>
+            </span> 
+        </h1>
+        <div className="my-12 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
+          <Button>Hire me</Button>
+          <Button icon={downloadIcon}>Download CV</Button>
+        </div>
+      </div>
+    </div>
+  </div>;
 };
 
 export default Hero;
