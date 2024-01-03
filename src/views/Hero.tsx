@@ -51,7 +51,15 @@ const Hero = () => {
           <Button icon={downloadIcon}>Download CV</Button>
         </div>
       </div>
+    
+      <img
+        src={homePageIllustation}
+        alt=""
+        className="max-w-full sm:max-w-[401px]"
+      />
     </div>
+
+    <div className="absolute botton-0 left-0 w-full h-[1px] bg-divider" />
   </div>;
 };
 
