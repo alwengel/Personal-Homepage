@@ -18,7 +18,8 @@ import { transition } from "../utils/transition";
 
 const About = () => {
   return (
-  <div 
+  <div
+    id="about"
     className="min-h-screen flex items-center justify-center relative"
     style={{
       background: `url(${aboutPageImg})`,

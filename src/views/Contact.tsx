@@ -13,7 +13,52 @@ import { fadeIn, scale } from "../utils/variants";
 import { transition } from "../utils/transition";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    
+    <div
+      id="contact"
+      className="min-h-screen flex items-center justify-center relative"
+      style={{
+        background: `url(${contactPageImg})`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no repeat",
+        backgroundSize: "cover",
+    }}
+  >
+    <div 
+      className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between
+        items-center xl:items-start gap-12 w-full pt-20 pb-20 sm:pb-16 px-12 "
+    >
+      <div className="flex-1 flex flex-col gap-4">
+      <h2 className="text-center xl:text-start text-4xl sm:text-5xl lg:text-[64px] 
+            font-bold text-textPrimary">
+          Got a projet in<span className="text-secondary"> mind?</span>
+        </h2>
+
+        <img src={contactIllustration} alt="" className="max-h-[348px]"/>
+
+        </div>
+        
+        <div className="flex-1 flex flex-col gap-6 max-w-[696px]">
+          <div className="flex flex-col sm:flex-row items-center gap-6">
+            <LabelInput labelText="Your name" placeholderText="name"/>
+            <LabelInput labelText="Your email" placeholderText="email"/>
+          </div>
+
+          <div className="flex flex-col sm:flex.row items-center gap-6">
+            <LabelInput 
+              labelText="Your message" 
+              placeholderText="Message"
+              textarea/>
+          </div>
+
+          <Button secondary>Send message</Button>
+        </div>
+      </div>
+
+    <div className="absolute botton-0 left-0 w-full h-[1px] bg-divider" />
+  </div>
+  )
 };
 
 export default Contact;
