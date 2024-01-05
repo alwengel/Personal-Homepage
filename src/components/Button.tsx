@@ -5,7 +5,7 @@ interface ButtonProps {
   children: ReactNode;
   secondary?: boolean;
   icon?: string;
-  onClick?: () => void;
+  onClick?: () => any ;
 }
 
 const Button: FC<ButtonProps> = ({ children, secondary, icon, onClick }) => {

@@ -2,6 +2,7 @@
 import homePageImg from "../assets/home-page.svg";
 import alexanderProfilePic from "../assets/Alexander_Profile_Pic.jpg";
 import downloadIcon from "../assets/download-btn-icon.svg";
+import cv from "../assets/Alexander_Engelhardt_CV.pdf"
 
 // components
 import { Button } from "../components";
@@ -15,6 +16,7 @@ import { motion } from "framer-motion";
 // utils
 import { transition } from "../utils/transition";
 import { fadeIn, scale } from "../utils/variants";
+import { downloadFile } from "../utils/download";
 
 const Hero = () => {
   return <div 
@@ -69,7 +71,12 @@ const Hero = () => {
           viewport={{ once: false}}
           className="flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
           <Button>Hire me</Button>
-          <Button icon={downloadIcon}>Download CV</Button>
+          <Button
+            icon={downloadIcon}
+            onClick={() => downloadFile({ fileUrl: cv, fileName: 'Alexander_Engelhardt_CV.pdf' })}
+            >
+            Download CV
+          </Button>
         </motion.div>
 
       </div>
