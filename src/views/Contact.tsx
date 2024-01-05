@@ -33,7 +33,7 @@ const Contact = () => {
         <div className="flex-1 flex flex-col gap-4">
         <Reveal>
         <h2 className="text-center xl:text-start text-4xl sm:text-5xl lg:text-[64px] 
-              font-bold text-textPrimary">
+              font-bold text-textWhite">
             Got a projet in<span className="text-secondary"> mind?</span>
           </h2>
           </Reveal>
@@ -69,8 +69,6 @@ const Contact = () => {
           <Button secondary>Send message</Button>
         </motion.div>
       </div>
-
-    <div className="absolute botton-0 left-0 w-full h-[1px] bg-divider" />
   </div>
   )
 };

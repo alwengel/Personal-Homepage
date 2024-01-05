@@ -35,7 +35,7 @@ const About = () => {
       <div className="flex-1 flex flex-col gap-4">
         <Reveal>
           <h2 className="text-center xl:text-start text-4xl sm:text-5xl lg:text-[64px] 
-              font-bold text-textPrimary">
+              font-bold text-textWhite">
             About <span className="text-secondary"> me</span>
           </h2>
         </Reveal>
@@ -72,15 +72,10 @@ const About = () => {
             alt=""
             className="max-w-full sm:max-w-[401px]"
           />
-        </div>
-        
+        </div>  
+      </div>
     </div>
-    
-    <div className="absolute botton-0 left-0 w-full h-[1px] bg-divider" />
-    
-    </div>
-    
-  )
+   )
   };
 
 export default About;

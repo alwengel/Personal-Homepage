@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         primary: "black",
         secondary: "black",
-        textPrimary: "#EEE",
+        textPrimary: "#d4d4d4",
+        textWhite: "#f3f6f4",
         textSecondary: "rgba(238, 238, 238, 0.75)",
         accent: "rgba(57, 62, 70, 0.75)",
         hoverSecondary: "#027378",
