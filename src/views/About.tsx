@@ -41,10 +41,29 @@ const About = () => {
         </Reveal>
 
         <Reveal>        
-          <p className="text-center xl:text-start text-base sm:text-lg text-textSecondary">
-            Hi, my name is Alexander, and I have a wide set of interests from philosophy and history
-            to arts to technology. On this website I will gather some of my thoughts on various topics.
-          </p>
+        <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+          Hi, my name is Alexander Engelhardt. I have a wide set of interests ranging from philosophy and history to arts and technology. 
+          I am studying the Master's Programme in Computer Science at the University of Helsinki with a focus on Software Architecture, 
+          Distributed Systems, and Full Stack Development. I also have a minor in geography entailing natural geography, urban planning, and geographical information systems.
+        </p>
+
+        <div className="mb-4" />
+
+        <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+          Outside of my studies, I have a strong interest in several forms of art. I am currently finishing my first musical concept album which 
+          embodies my experiences in music and of the world up to this point, mixing pop, rock, jazz, classical, hip hop and ambience. I am also directing/screenwriting a 
+          semi-professional surrealistic horror comedy film which is set to release sometime this year. 
+        </p>
+
+        <div className="mb-4" />
+
+        <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+          My love for the arts is perhaps counter-intuitively reflected 
+          in my computer science studies in that I have consciously chosen to focus on some of the most technical aspects of computer science, 
+          as I feel that my keen artistic eye gives me a natural affinity for the less technical aspects.    
+        </p>
+
+
         </Reveal>
         <motion.div 
           variants={fadeIn("up")}
