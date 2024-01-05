@@ -45,10 +45,8 @@ const Hero = () => {
             <Typewriter 
               words={["Developer, Designer, Musician"]}
               cursor
-              cursorStyle="_"
-              typeSpeed={250}
-              deleteSpeed={150}
-              loop
+              cursorStyle=""
+              typeSpeed={150}
             ></Typewriter>
             </span> 
         </motion.h1>

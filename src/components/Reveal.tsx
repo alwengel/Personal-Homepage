@@ -32,15 +32,7 @@ const Reveal: FC<RevealProps> = ({ children }) => {
       >
         {children}
       </motion.div>
-      <motion.div 
-        variants={reveal()}
-        initial="hidden"
-        transition={{duration: 0.75, ease: "easeIn"}}
-        whileInView="visible"
-        viewport={{once: false}}
-        className="absolute inset-0 bg-secondary z-10"
-        >
-      </motion.div>
+
 
     </div>
   )
