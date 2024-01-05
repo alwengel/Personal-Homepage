@@ -36,19 +36,19 @@ const Hero = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false}}
-          className="w-full xl:w-fit text-center xl:text-start text-4xl sm:text-6xl lg:text-8xl
-            font-bolt text-textPrimary uppercase"
+          className="w-full xl:w-fit text-center xl:text-start text-2xl sm:text-6xl lg:text-6xl
+            font-bolt text-textPrimary"
         >
-          Creative
+          Alexander Engelhardt
           <br />
           <span className="text-secondary">
             <Typewriter 
-              words={["Developer, Designer, Musician"]}
+              words={["Technology, Arts, Strategy"]}
               cursor
               cursorStyle=""
               typeSpeed={150}
             ></Typewriter>
-            </span> 
+          </span> 
         </motion.h1>
         <motion.div 
           variants={fadeIn("up")}
@@ -56,12 +56,12 @@ const Hero = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false}}
-        
-        className="my-12 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
+          className="my-12 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
           <Button>Hire me</Button>
           <Button icon={downloadIcon}>Download CV</Button>
         </motion.div>
       </div>
+
     
       <motion.img
         variants={scale()}
