@@ -42,42 +42,24 @@ const ComputerScience = () => {
 
         <Reveal>        
         <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-          Hi, my name is Alexander Engelhardt. I have a wide set of interests ranging from philosophy and history to arts and technology. 
-          I am studying the Master's Programme in Computer Science at the University of Helsinki with a focus on Software Architecture, 
-          Distributed Systems, and Full Stack Development. I also have a minor in geography entailing natural geography, urban planning, and geographical information systems.
+          Just some years ago I would not have seen myself loving computer science. Though I had always faired well in all subjects in school
+          I used to feel that my true calling was in arts, people skills and big picture thinking. In upper secondary school I seriously considered 
+          a career as a musician. When studying for the final exams and more specifically Geography, I noticed how I noticed how my increased
+          understanding of the world also led to greater meaning in my artistic works. This led to me applying and getting accepted to the bachelor's 
+          degree in geography.
+
         </p>
 
         <div className="mb-4" />
 
         <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-          Outside of my studies, I have a strong interest in several forms of art. I am currently finishing my first musical concept album which 
-          embodies my experiences in music and of the world up to this point, mixing pop, rock, jazz, classical, hip hop and ambience. I am also directing/screenwriting a 
-          semi-professional surrealistic horror comedy film which is set to release sometime this year. 
+          Then how come I have ended up studying Computer science? The answer to this is that during my studies of geography I found my self appriciating the
+          technical courses the most as I felt that these gave me the most valuable and tangible skills. This culminated in me switching from the bachelor's 
+          programme in geography to the bachelor's programme in computer science. Ever since I have felt that computer science has given growth to my 
+          character where I not only posess a keen artistic eye, big picture analytical thinking that geography entails, but also robust technical insight.
         </p>
-
-        <div className="mb-4" />
-
-        <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-          My love for the arts is perhaps counter-intuitively reflected 
-          in my computer science studies in that I have consciously chosen to focus on some of the most technical aspects of computer science, 
-          as I feel that my keen artistic eye gives me a natural affinity for the less technical aspects.    
-        </p>
-
 
         </Reveal>
-        <motion.div 
-          variants={fadeIn("up")}
-          transition={transition()}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false}}
-          className="flex items-center justify-center xl:justify-start gap-6">
-          <SocialMediaIcon imgSrc={facebookIcon} title="Facebook"></SocialMediaIcon>
-          <SocialMediaIcon imgSrc={instagramIcon} title="Instagram"></SocialMediaIcon>
-          <SocialMediaIcon imgSrc={twitterIcon} title="Twitter"></SocialMediaIcon>
-          <SocialMediaIcon imgSrc={youtubeIcon} title="YouTube"></SocialMediaIcon>
-        </motion.div>
-
   
       </div>
       <div className="flex-1 flex items-center justify-center">

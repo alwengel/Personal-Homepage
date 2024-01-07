@@ -26,9 +26,6 @@ const TopBar: React.FC = () => {
         <a href="/" className="text-white font-bold text-lg">Your Logo</a>
 
         <div className="hidden md:flex space-x-4">
-          <a href="/" className="text-white hover:text-gray-300">
-            Home
-          </a>
           <a href="/computer_science" className="text-white hover:text-gray-300">
             Computer Science
           </a>
