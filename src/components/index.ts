@@ -4,7 +4,7 @@ import SocialMediaIcon from "./SocialMediaIcon";
 import Card from "./Card";
 import LabelInput from "./LabelInput";
 import Reveal from "./Reveal";
-import TopBar from "./topBar";
+import TopBar from "./TopBar";
 
 
 export { Button, Menu, SocialMediaIcon, Card, LabelInput, Reveal, TopBar };
