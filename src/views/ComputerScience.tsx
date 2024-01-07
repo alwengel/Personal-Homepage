@@ -1,5 +1,5 @@
 // assets
-import aboutPageImg from "../assets/about-me-page.svg";
+import computerSciencePageImg from "../assets/computer_science.svg";
 import aboutIllustration from "../assets/about-illustration.svg";
 import facebookIcon from "../assets/facebook-icon.svg";
 import instagramIcon from "../assets/instagram-icon.svg";
@@ -22,7 +22,7 @@ const ComputerScience = () => {
     id="about"
     className="min-h-screen flex items-center justify-center relative"
     style={{
-      background: `url(${aboutPageImg})`,
+      background: `url(${computerSciencePageImg})`,
       backgroundPosition: "center",
       backgroundRepeat: "no repeat",
       backgroundSize: "cover",

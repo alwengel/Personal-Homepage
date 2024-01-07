@@ -9,7 +9,7 @@ import { About, Contact, Hero, Projects, ComputerScience, Geography, Arts } from
 
 
 // components
-import { Menu } from "./components";
+import { Menu, TopBar } from "./components";
 
 
 const HomeView = () => (
@@ -45,6 +45,7 @@ const ArtsView = () => (
 function App() {
   return (
     <Router>
+      <TopBar />
       <>
         <Routes>
           <Route path="/" Component={HomeView} />
@@ -53,6 +54,7 @@ function App() {
           <Route path="/arts" Component={ArtsView} />
         </Routes>
       </>
+        
         <Menu />
     </Router>
   );
