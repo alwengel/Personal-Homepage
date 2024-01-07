@@ -22,7 +22,7 @@ const Geography = () => {
 
   return (
   <div
-    id="about"
+    id="geography"
     className="min-h-screen flex items-center justify-center relative"
     style={{
       background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
