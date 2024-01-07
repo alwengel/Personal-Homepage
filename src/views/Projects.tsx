@@ -1,9 +1,6 @@
 // react
 import { useState } from "react";
 
-// assets
-import projectsPageImg from "../assets/projects-page.svg";
-
 // components
 import { Button, Card, Reveal } from "../components";
 
@@ -16,10 +13,13 @@ import { motion } from "framer-motion";
 // utils
 import { fadeIn } from "../utils/variants";
 import { transition } from "../utils/transition";
+import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
 type Category = 'uiUx' | 'web'
 
 const Projects = () => {
+
+  const svgString = generateBackgroundSVG("#e28e09")
   const [activeCategory, setActiveCategory] = useState<Category>("uiUx")
 
   const filteredProjects = () => {
@@ -34,7 +34,7 @@ const Projects = () => {
     id="projects"
     className="min-h-screen relative"
     style={{
-      background: `url(${projectsPageImg})`,
+      background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
       backgroundPosition: "center",
       backgroundRepeat: "no repeat",
       backgroundSize: "cover",

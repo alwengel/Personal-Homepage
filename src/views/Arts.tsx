@@ -1,5 +1,4 @@
 // assets
-import artsPageImg from "../assets/arts-page.svg";
 import aboutIllustration from "../assets/about-illustration.svg";
 import facebookIcon from "../assets/facebook-icon.svg";
 import instagramIcon from "../assets/instagram-icon.svg";
@@ -15,14 +14,18 @@ import { motion } from "framer-motion";
 // utils
 import { fadeIn, scale } from "../utils/variants";
 import { transition } from "../utils/transition";
+import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
 const Arts = () => {
+
+  const svgString = generateBackgroundSVG("#aa8000")
+
   return (
   <div
     id="about"
     className="min-h-screen flex items-center justify-center relative"
     style={{
-      background: `url(${artsPageImg})`,
+      background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
       backgroundPosition: "center",
       backgroundRepeat: "no repeat",
       backgroundSize: "cover",

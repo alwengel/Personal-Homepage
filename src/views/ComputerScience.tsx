@@ -1,28 +1,27 @@
 // assets
-import computerSciencePageImg from "../assets/computer_science.svg";
 import aboutIllustration from "../assets/about-illustration.svg";
-import facebookIcon from "../assets/facebook-icon.svg";
-import instagramIcon from "../assets/instagram-icon.svg";
-import twitterIcon from "../assets/twitter-icon.svg";
-import youtubeIcon from "../assets/youtube-icon.svg";
 
 // components
-import { SocialMediaIcon, Reveal } from "../components";
+import { Reveal } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
 
 // utils
-import { fadeIn, scale } from "../utils/variants";
+import { scale } from "../utils/variants";
 import { transition } from "../utils/transition";
+import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
 const ComputerScience = () => {
+
+  const svgString = generateBackgroundSVG("#00c0b2")
+
   return (
   <div
     id="about"
     className="min-h-screen flex items-center justify-center relative"
     style={{
-      background: `url(${computerSciencePageImg})`,
+      background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
       backgroundPosition: "center",
       backgroundRepeat: "no repeat",
       backgroundSize: "cover",

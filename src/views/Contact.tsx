@@ -1,5 +1,4 @@
 // assets
-import contactPageImg from "../assets/contact-page.svg";
 import contactIllustration from "../assets/contact-illustration.svg";
 
 // components
@@ -11,18 +10,21 @@ import { motion } from "framer-motion";
 // utils
 import { fadeIn, scale } from "../utils/variants";
 import { transition } from "../utils/transition";
+import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
 const Contact = () => {
+
+  const svgString = generateBackgroundSVG("#6fa8dc")
+
   return (
-    
-    <div
-      id="contact"
-      className="min-h-screen flex items-center justify-center relative"
-      style={{
-        background: `url(${contactPageImg})`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no repeat",
-        backgroundSize: "cover",
+  <div
+    id="about"
+    className="min-h-screen flex items-center justify-center relative"
+    style={{
+      background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
+      backgroundPosition: "center",
+      backgroundRepeat: "no repeat",
+      backgroundSize: "cover",
     }}
   >
     <div 
