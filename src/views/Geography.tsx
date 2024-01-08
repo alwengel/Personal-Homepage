@@ -1,5 +1,5 @@
 // assets
-import aboutIllustration from "../assets/about-illustration.svg";
+import rotatingEarth from "../assets/Rotating_earth.gif";
 
 
 // components
@@ -13,75 +13,83 @@ import { fadeIn, scale } from "../utils/variants";
 import { transition } from "../utils/transition";
 import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
-const Geography = () => {
+
+const About = () => {
 
   const svgString = generateBackgroundSVG("#38761d")
 
   return (
-  <div
-    id="geography"
-    className="min-h-screen flex items-center justify-center relative"
-    style={{
-      background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
-      backgroundPosition: "center",
-      backgroundRepeat: "no repeat",
-      backgroundSize: "cover",
-    }}
-  >
-    <div 
-      className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between
-      items-center xl:items-start gap-12 w-full py-16 px-12"
+    <div
+      id="about"
+      className="min-h-screen flex items-center justify-center relative"
+      style={{
+        background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
     >
-      <div className="flex-1 flex flex-col gap-4">
-        <Reveal>
-          <h2 className="text-center xl:text-start text-4xl sm:text-5xl lg:text-[64px] 
-              font-bold text-textWhite">
-            Geography: <span className="text-secondary"> The Eearth and all its wonders</span>
-          </h2>
-        </Reveal>
+      <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
 
-        <Reveal>        
-        <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-          Hi, my name is Alexander Engelhardt. I have a wide set of interests ranging from philosophy and history to arts and technology. 
-          I am studying the Master's Programme in Computer Science at the University of Helsinki with a focus on Software Architecture, 
-          Distributed Systems, and Full Stack Development. I also have a minor in geography entailing natural geography, urban planning, and geographical information systems.
-        </p>
+        <motion.div className="text-center xl:text-start">
+          <Reveal>
+            <h2 className="text-4xl sm:text-5xl lg:text-[64px] font-bold text-textWhite">
+              Geography: <span className="text-secondary">Big Picture Thinking</span>
+            </h2>
+          </Reveal>
+        </motion.div>
 
-        <div className="mb-4" />
+      <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
 
-        <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-          Outside of my studies, I have a strong interest in several forms of art. I am currently finishing my first musical concept album which 
-          embodies my experiences in music and of the world up to this point, mixing pop, rock, jazz, classical, hip hop and ambience. I am also directing/screenwriting a 
-          semi-professional surrealistic horror comedy film which is set to release sometime this year. 
-        </p>
-
-        <div className="mb-4" />
-
-        <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-          My love for the arts is perhaps counter-intuitively reflected 
-          in my computer science studies in that I have consciously chosen to focus on some of the most technical aspects of computer science, 
-          as I feel that my keen artistic eye gives me a natural affinity for the less technical aspects.    
-        </p>
-
-
-        </Reveal>
   
-      </div>
-      <div className="flex-1 flex items-center justify-center">
-          <motion.img
-            variants={scale()}
-            transition={transition()}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false}}
-            src={aboutIllustration}
-            alt=""
-            className="max-w-full sm:max-w-[401px]"
-          />
-        </div>  
+        <div className="flex-1 flex flex-col xl:flex-row gap-4">
+
+          
+          <div className="flex-1">
+            <Reveal>        
+            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+              Why do I value geography? It is because no other discipline is as interdisciplinary as geography.
+              Through this lens one can come to understand how mountains turn to sand and how sand turns into high rise buildings.
+              How these buildings can lead to economic wonders or to the collapse of eco-systems. Having this mindset gives 
+              an opportunity to tackle hard questions taking the big picture into consideration. This is increasingly important
+              in all aspects of society as climate change needs to be fought, wars are started over resources and
+              pandemics shut down the whole planet.
+
+            </p>
+          
+
+            <div className="mb-4" />
+
+            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+              In my geographical studies I have covered everything from classical natural geography where the focus is on
+              analysing how the forces of nature interract and form our planet, to cultural and urban geography where the
+              focus is on human activity and how this interrelates with the natural world. Lastly I have also studies the
+              geographical information systems (GIS), where geography and computer science meet. Geographical data makes
+              up the majority of all data in the world and is expected to grow tremendously in the future.   
+            </p>
+
+            </Reveal>
+          </div>
+          <div className="flex-1">
+            <div className="flex-1 flex items-center justify-center">
+              <motion.img
+                variants={scale()}
+                transition={transition()}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false}}
+                src={rotatingEarth}  // Replace with the actual path to your gif file
+                alt="Rotating Earth"
+                className="max-w-full sm:max-w-[401px]" 
+              />
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-   )
-  };
+    </div>
+  );
+}
 
-export default Geography;
+export default About;

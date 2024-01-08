@@ -14,13 +14,13 @@ import { transition } from "../utils/transition";
 import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
 
-const About = () => {
+const ComputerScience = () => {
 
-  const svgString = generateBackgroundSVG("#00c0b2")
+  const svgString = generateBackgroundSVG("#64c6c7")
 
   return (
     <div
-      id="about"
+      id="computer-science"
       className="min-h-screen flex items-center justify-center relative"
       style={{
         background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
@@ -79,7 +79,7 @@ const About = () => {
                 src={alexandersComputerSetUp}
                 alt=""
                 className="max-w-full sm:max-w-[401px]"
-                style={{ border: '2px solid #333' }}
+                style={{ border: '2px solid #333' }} // Add this line for the border
               />
             </div>
           </div>
@@ -90,4 +90,4 @@ const About = () => {
   );
 }
 
-export default About;
+export default ComputerScience;

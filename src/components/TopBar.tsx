@@ -22,7 +22,7 @@ const TopBar: React.FC = () => {
     <div className="relative">
       <nav className="bg-gray-700 p-4 fixed top-0 left-0 right-0 z-10 bg-opacity-50 backdrop-filter backdrop-blur">
         <div className="container mx-auto flex justify-between items-center">
-          <a href="/" className="text-white font-bold text-lg">Your Logo</a>
+          <a href="/" className="text-white font-bold text-lg">Home</a>
   
           <div className="hidden md:flex space-x-4">
             <a href="/computer_science" className="text-white hover:text-gray-300">
