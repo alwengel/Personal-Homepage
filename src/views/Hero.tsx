@@ -2,9 +2,13 @@
 import alexanderProfilePic from "../assets/Alexander_Profile_Pic.jpg";
 import downloadIcon from "../assets/download-btn-icon.svg";
 import cv from "../assets/Alexander_Engelhardt_CV.pdf"
+import facebookIcon from "../assets/facebook-icon.svg";
+import instagramIcon from "../assets/instagram-icon.svg";
+import twitterIcon from "../assets/twitter-icon.svg";
+import youtubeIcon from "../assets/youtube-icon.svg";
 
 // components
-import { Button } from "../components";
+import { SocialMediaIcon, Button } from "../components";
 
 // react-simple-typewriter
 import { Typewriter } from "react-simple-typewriter";
@@ -82,6 +86,19 @@ const Hero = () => {
               Download CV
             </Button>
           </motion.div>
+
+          <motion.div 
+          variants={fadeIn("up")}
+          transition={transition()}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false}}
+          className="flex items-center justify-center xl:justify-start gap-6">
+          <SocialMediaIcon imgSrc={facebookIcon} title="Facebook"></SocialMediaIcon>
+          <SocialMediaIcon imgSrc={instagramIcon} title="Instagram"></SocialMediaIcon>
+          <SocialMediaIcon imgSrc={twitterIcon} title="Twitter"></SocialMediaIcon>
+          <SocialMediaIcon imgSrc={youtubeIcon} title="YouTube"></SocialMediaIcon>
+        </motion.div>
 
         </div>
         

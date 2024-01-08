@@ -1,12 +1,9 @@
 // assets
 import aboutIllustration from "../assets/about-illustration.svg";
-import facebookIcon from "../assets/facebook-icon.svg";
-import instagramIcon from "../assets/instagram-icon.svg";
-import twitterIcon from "../assets/twitter-icon.svg";
-import youtubeIcon from "../assets/youtube-icon.svg";
+
 
 // components
-import { SocialMediaIcon, Reveal } from "../components";
+import { Reveal } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -68,19 +65,6 @@ const Geography = () => {
 
 
         </Reveal>
-        <motion.div 
-          variants={fadeIn("up")}
-          transition={transition()}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false}}
-          className="flex items-center justify-center xl:justify-start gap-6">
-          <SocialMediaIcon imgSrc={facebookIcon} title="Facebook"></SocialMediaIcon>
-          <SocialMediaIcon imgSrc={instagramIcon} title="Instagram"></SocialMediaIcon>
-          <SocialMediaIcon imgSrc={twitterIcon} title="Twitter"></SocialMediaIcon>
-          <SocialMediaIcon imgSrc={youtubeIcon} title="YouTube"></SocialMediaIcon>
-        </motion.div>
-
   
       </div>
       <div className="flex-1 flex items-center justify-center">
