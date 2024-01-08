@@ -1,0 +1,18 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle -->
+  <circle cx="100" cy="100" r="80" fill="#f0f0f0" stroke="#333" stroke-width="5" />
+
+  <!-- Sector 1: Artistic & Creative -->
+  <path d="M100,100 L100,20 A80,80 0 0,1 179.6,79.5 Z" fill="#ffcc00" />
+
+  <!-- Sector 2: Technological Insight -->
+  <path d="M100,100 L179.6,79.5 A80,80 0 0,1 79.5,179.6 Z" fill="#66cc66" />
+
+  <!-- Sector 3: People skills -->
+  <path d="M100,100 L79.5,179.6 A80,80 0 0,1 100,20 Z" fill="#3399ff" />
+
+  <!-- Text labels -->
+  <text x="100" y="30" text-anchor="middle" font-size="12" fill="#333">Artistic and Creative</text>
+  <text x="180" y="120" text-anchor="middle" font-size="12" fill="#333">Technological Insight</text>
+  <text x="20" y="120" text-anchor="middle" font-size="12" fill="#333">People Skills</text>
+</svg>
