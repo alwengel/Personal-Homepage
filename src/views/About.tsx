@@ -1,6 +1,5 @@
 // assets
 import skillCircle from "../assets/skill-circle.svg"
-import heroIllustration from "../assets/hero-illustration.svg"
 
 // components
 import { Reveal } from "../components";
