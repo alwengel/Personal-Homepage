@@ -18,6 +18,7 @@ const HomeView = () => (
     <About />
     <Projects />
     <Contact />
+    <Menu />
     
   </>
 )
@@ -56,7 +57,7 @@ function App() {
         </Routes>
       </>
         
-        <Menu />
+        
     </Router>
   );
 }

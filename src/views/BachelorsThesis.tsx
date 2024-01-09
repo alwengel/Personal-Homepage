@@ -32,7 +32,7 @@ const BachelorsThesis = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-1">
+      <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-2">
 
         <motion.div className="text-center xl:text-start">
           <Reveal>
@@ -42,7 +42,7 @@ const BachelorsThesis = () => {
           </Reveal>
         </motion.div>
 
-      <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
+      <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-2">
 
   
         <div className="flex-1 flex flex-col xl:flex-row gap-4">
@@ -88,17 +88,7 @@ const BachelorsThesis = () => {
               outside the context of the bachelor's thesis. As I am really keen on personal projects something to do with Full-stack development seemed like a logical choice. As I am
               also really interested in starting my own company I seriously considered writing about Software development in small companies. Third, though impossible to know, 
               I wanted the topic to help me steer my skills and career in a direction that is robust against being replaced by AI. Here the nitty gritties associated with learning specific
-              technologies used in Full-stack development, meant this topic potentially wasn't the best in the long run. An intersting topic which could maybe be more robust against replacement of AI
-              is Model-Driven Development. I however refrained from this topic for my bachelor's thesis as I had little experience with the topic.  
-            </p>
-
-            <div className="mb-4" />
-
-            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-              At the end I wanted to write about something to do with Software architecture as this felt like a topic which balanced best between the relevant factors. It was also technical enough
-              to challenge me. As software architecture makes up the skeleton of a software it is important understanding any software. Wanting to increase the focus on the technical aspects of
-              software architecture I chose to focus on quality attributes and architectural tactics. To scope things down and make the thesis focus on something a bit more concrete I refrained from
-              writing about software architecture and quality attributes on a theoretical level and instead focused on comparing two examples.  
+              technologies used in Full-stack development, meant this topic potentially wasn't the best in the long run.
             </p>
 
             </Reveal>
@@ -125,6 +115,24 @@ const BachelorsThesis = () => {
                 Download Thesis
                 </Button>
             </div>
+
+            <div className="mb-4" />
+
+
+            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+              An intersting topic which could maybe be more robust against replacement of AI
+              is Model-Driven Development. I however refrained from this topic for my bachelor's thesis as I had little experience with the topic.  
+            </p>
+
+            <div className="mb-4" />
+
+            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+              At the end I wanted to write about something to do with Software architecture as this felt like a topic which balanced best between the relevant factors. It was also technical enough
+              to challenge me. As software architecture makes up the skeleton of a software it is important understanding any software. Wanting to increase the focus on the technical aspects of
+              software architecture I chose to focus on quality attributes and architectural tactics. To scope things down and make the thesis focus on something a bit more concrete I refrained from
+              writing about software architecture and quality attributes on a theoretical level and instead focused on comparing two examples.  
+            </p>
+
             </div>
 
         </div>
