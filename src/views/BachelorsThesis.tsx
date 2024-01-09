@@ -32,7 +32,7 @@ const BachelorsThesis = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-2">
+      <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
 
         <motion.div className="text-center xl:text-start">
           <Reveal>
@@ -42,7 +42,7 @@ const BachelorsThesis = () => {
           </Reveal>
         </motion.div>
 
-      <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-2">
+        <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-1">
 
   
         <div className="flex-1 flex flex-col xl:flex-row gap-4">
@@ -54,7 +54,7 @@ const BachelorsThesis = () => {
               The topic of my bachelor's thesis is how the core structural differences between Monolithic- and Microservice architecture has great impact on what can be
               achieved with a software. More specifically it compares how the two architectures differ in their ability to perform, scale with numbers of users, deploy and be cyber secure.
               These qualities where chosen on the basis of being especially important when comparing Monolithic- and Microservice architecture in specific while also constituting crucial
-              qualitites in their own right.  
+              qualitites in their own right.
 
             </p>
           
@@ -93,7 +93,9 @@ const BachelorsThesis = () => {
 
             </Reveal>
           </div>
+          
           <div className="flex-1">
+            <Reveal>
             <div className="flex-1 flex flex-col items-center justify-center text-center">
                 <motion.img
                 variants={scale()}
@@ -132,8 +134,8 @@ const BachelorsThesis = () => {
               software architecture I chose to focus on quality attributes and architectural tactics. To scope things down and make the thesis focus on something a bit more concrete I refrained from
               writing about software architecture and quality attributes on a theoretical level and instead focused on comparing two examples.  
             </p>
-
-            </div>
+            </Reveal>
+          </div>
 
         </div>
       </div>
