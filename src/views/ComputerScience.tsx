@@ -39,7 +39,7 @@ const ComputerScience = () => {
           </Reveal>
         </motion.div>
 
-      <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
+      <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-1">
 
   
         <div className="flex-1 flex flex-col xl:flex-row gap-4">
