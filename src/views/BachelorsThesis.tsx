@@ -11,7 +11,7 @@ import { Reveal, Button } from "../components";
 import { motion } from "framer-motion";
 
 // utils
-import { fadeIn, scale } from "../utils/variants";
+import { scale } from "../utils/variants";
 import { transition } from "../utils/transition";
 import { generateBackgroundSVG } from "../utils/backgroundSVG";
 import { downloadFile } from "../utils/download";
@@ -19,7 +19,7 @@ import { downloadFile } from "../utils/download";
 
 const BachelorsThesis = () => {
 
-  const svgString = generateBackgroundSVG("#64c6c7")
+  const svgString = generateBackgroundSVG("#A9978B")
 
   return (
     <div

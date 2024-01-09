@@ -6,5 +6,6 @@ import ComputerScience from "./ComputerScience";
 import Geography from "./Geography";
 import Arts from "./Arts";
 import BachelorsThesis from "./BachelorsThesis"
+import BerryPickerTracker from "./BerryPickerTracker";
 
-export { Hero, About, Projects, Contact, ComputerScience, Geography, Arts, BachelorsThesis };
+export { Hero, About, Projects, Contact, ComputerScience, Geography, Arts, BachelorsThesis, BerryPickerTracker };
