@@ -66,6 +66,12 @@ const ComputerScience = () => {
               character where I not only posess a keen artistic eye, big picture analytical thinking that geography entails, but also robust technical insight.
             </p>
 
+            <div className="mb-4" />
+
+            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+              Scroll down this page to read about some of my projects or other works related to computer science. 
+            </p>
+
             </Reveal>
           </div>
           <div className="flex-1">

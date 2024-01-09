@@ -5,5 +5,6 @@ import Contact from "./Contact";
 import ComputerScience from "./ComputerScience";
 import Geography from "./Geography";
 import Arts from "./Arts";
+import BachelorsThesis from "./BachelorsThesis"
 
-export { Hero, About, Projects, Contact, ComputerScience, Geography, Arts };
+export { Hero, About, Projects, Contact, ComputerScience, Geography, Arts, BachelorsThesis };
