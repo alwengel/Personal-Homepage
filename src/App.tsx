@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 // views
-import { About, Contact, Hero, ComputerScience, Geography, Arts, BachelorsThesis, BerryPickerTracker, GithubProjects } from "./views" 
+import { About, Hero, ComputerScience, Geography, Arts, BachelorsThesis, BerryPickerTracker, GithubProjects } from "./views" 
 
 
 // components
@@ -16,7 +16,6 @@ const HomeView = () => (
   <>
     <Hero />
     <About />
-    <Contact />
     <Menu />
     
   </>

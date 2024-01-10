@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
+import homePageLogo from "../assets/homepageLogo.png"
+
+// components
+import { Reveal } from "../components";
+// framer-motion
+import { motion } from "framer-motion";
+
+
 const TopBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,9 +28,23 @@ const TopBar: React.FC = () => {
 
   return (
     <div className="relative">
-      <nav className="bg-gray-700 p-4 fixed top-0 left-0 right-0 z-10 bg-opacity-50 backdrop-filter backdrop-blur">
+      <nav className="bg-gray-700 p-1 fixed top-0 left-0 right-0 z-10 bg-opacity-50 backdrop-filter backdrop-blur">
         <div className="container mx-auto flex justify-between items-center">
-          <a href="/" className="text-white font-bold text-lg">Home</a>
+        <Reveal>
+          <a href="/" className="flex items-center group">
+
+            <motion.img
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              src={homePageLogo}
+              alt=""
+              className="max-h-12 max-w-12 rounded-full transition-transform duration-300 transform group-hover:scale-110"
+            />
+          </a>
+        </Reveal>
+
+
   
           <div className="hidden md:flex space-x-4">
             <a href="/computer_science" className="text-white hover:text-gray-300">
