@@ -60,7 +60,7 @@ const Hero = () => {
           </span> 
         </motion.h1>
 
-        <div className="my-12 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
+        <div className="my-6 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
           <motion.img
             variants={scale()}
             transition={transition()}
@@ -73,17 +73,17 @@ const Hero = () => {
           />
 
         </div>
-        <div className="my-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
+        <div className="my-1 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
           <SocialMediaIcon imgSrc={outlookIcon} title="Email" />
           <div className="mb-1 sm:mb-0"><strong>Email:</strong> alexander.engelhardt{"(at)"}helsinki.fi</div>
         </div>
 
-        <div className="my-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
+        <div className="my-1 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
           <SocialMediaIcon imgSrc={linkedInIcon} title="LinkedIn" />
           <div className="mb-1 sm:mb-0"><strong>LinkedIn:</strong> .......</div>
         </div>
 
-        <div className="my-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
+        <div className="my-1 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
           <SocialMediaIcon imgSrc={githubIcon} title="Github" href="https://github.com/Catrovitch"/>
           <div className="mb-1 sm:mb-0"><strong>Github:</strong> Catrovitch</div>
         </div>
@@ -107,7 +107,7 @@ const Hero = () => {
               className="max-w-full sm:max-w-[401px] rounded-full hidden sm:block"
             />
       <div>
-      <div className="mb-4" />
+      <div className="mb-8" />
         <motion.div 
             variants={fadeIn("up")}
             transition={transition()}
