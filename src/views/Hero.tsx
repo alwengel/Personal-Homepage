@@ -2,10 +2,10 @@
 import alexanderProfilePic from "../assets/Alexander_Profile_Pic.jpg";
 import downloadIcon from "../assets/download-btn-icon.svg";
 import cv from "../assets/Alexander_Engelhardt_CV.pdf"
-import facebookIcon from "../assets/facebook-icon.svg";
-import instagramIcon from "../assets/instagram-icon.svg";
-import twitterIcon from "../assets/twitter-icon.svg";
-import youtubeIcon from "../assets/youtube-icon.svg";
+import githubIcon from "../assets/githubIcon.svg"
+import linkedInIcon from "../assets/linkedInIcon.svg"
+import outlookIcon from "../assets/outlook.icon.svg"
+
 
 // components
 import { SocialMediaIcon, Button } from "../components";
@@ -78,7 +78,6 @@ const Hero = () => {
             whileInView="visible"
             viewport={{ once: false}}
             className="flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
-            <Button>Hire me</Button>
             <Button
               icon={downloadIcon}
               onClick={() => downloadFile({ fileUrl: cv, fileName: 'Alexander_Engelhardt_CV.pdf' })}
@@ -94,13 +93,28 @@ const Hero = () => {
           whileInView="visible"
           viewport={{ once: false}}
           className="flex items-center justify-center xl:justify-start gap-6">
-          <SocialMediaIcon imgSrc={facebookIcon} title="Facebook"></SocialMediaIcon>
-          <SocialMediaIcon imgSrc={instagramIcon} title="Instagram"></SocialMediaIcon>
-          <SocialMediaIcon imgSrc={twitterIcon} title="Twitter"></SocialMediaIcon>
-          <SocialMediaIcon imgSrc={youtubeIcon} title="YouTube"></SocialMediaIcon>
         </motion.div>
 
+
         </div>
+        <div className="my-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start">
+          <SocialMediaIcon imgSrc={outlookIcon} title="Email" />
+          <div className="mb-1 sm:mb-0">Email: alexander.engelhardt{"(at)"}helsinki.fi</div>
+        </div>
+
+        <div className="my-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start">
+          <SocialMediaIcon imgSrc={linkedInIcon} title="LinkedIn" />
+          <div className="mb-1 sm:mb-0">LinkedIn: --------------------------</div>
+        </div>
+
+        <div className="my-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start">
+          <SocialMediaIcon imgSrc={githubIcon} title="Github" href="https://github.com/Catrovitch"/>
+          <div className="mb-1 sm:mb-0">Github: Catrovitch</div>
+        </div>
+
+
+
+
         
       </div>
       <motion.img
@@ -114,6 +128,7 @@ const Hero = () => {
             className="max-w-full sm:max-w-[401px] rounded-full hidden sm:block"
           />
     </div>
+
   </div>
   )
 };

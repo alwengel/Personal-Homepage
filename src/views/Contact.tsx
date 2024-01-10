@@ -1,5 +1,4 @@
-// assets
-import contactIllustration from "../assets/contact-illustration.svg";
+
 
 // components
 import { Button, LabelInput, Reveal } from "../components";
@@ -14,7 +13,7 @@ import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
 const Contact = () => {
 
-  const svgString = generateBackgroundSVG("#6fa8dc")
+  const svgString = generateBackgroundSVG("#073763")
 
   return (
   <div
@@ -36,16 +35,10 @@ const Contact = () => {
         <Reveal>
         <h2 className="text-center xl:text-start text-4xl sm:text-5xl lg:text-[64px] 
               font-bold text-textWhite">
-            Got a projet in<span className="text-secondary"> mind?</span>
+            Contact & <span className="text-secondary">Information</span>
           </h2>
           </Reveal>
-        <motion.img
-          variants={scale()}
-          transition={transition()}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false}}
-          src={contactIllustration} alt="" className="max-h-[348px]"/>
+      
         </div>
 
         <motion.div
@@ -55,20 +48,6 @@ const Contact = () => {
           whileInView="visible"
           viewport={{ once: false}}
           className="flex-1 flex flex-col gap-6 max-w-[696px]">
-
-          <div className="flex flex-col sm:flex-row items-center gap-6">
-            <LabelInput labelText="Your name" placeholderText="name"/>
-            <LabelInput labelText="Your email" placeholderText="email"/>
-          </div>
-
-          <div className="flex flex-col sm:flex.row items-center gap-6">
-            <LabelInput 
-              labelText="Your message" 
-              placeholderText="Message"
-              textarea/>
-          </div>
-
-          <Button secondary>Send message</Button>
         </motion.div>
       </div>
   </div>

@@ -8,8 +8,7 @@ import { Reveal } from "../components";
 import { motion } from "framer-motion";
 
 // utils
-import { fadeIn, scale } from "../utils/variants";
-import { transition } from "../utils/transition";
+
 import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
 
@@ -53,6 +52,7 @@ const About = () => {
                   I am studying the Master's Programme in Computer Science at the University of Helsinki with a focus on Software Architecture,
                   Distributed Systems, and Full Stack Development. I also have a minor in geography entailing natural geography, urban planning, and geographical information systems.
                 </p>
+                <div className="mb-4" />
 
                 <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
                   Outside of my studies, I have a strong interest in several forms of art. I am currently finishing my first musical concept album which
@@ -64,16 +64,15 @@ const About = () => {
 
             <div className="flex-1 xl:max-w-[50%]"> {/* Adjust the max-width as needed */}
               <Reveal>
-                <motion.img
-                  variants={scale()}
-                  transition={transition()}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: false}}
-                  src={skillCircle}
-                  alt=""
-                  className="max-h-full max-w-full"
-                />
+              <motion.img
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                src={skillCircle}
+                alt=""
+                className="max-h-full max-w-full"
+              />
+
               </Reveal>
             </div>
 
@@ -88,14 +87,19 @@ const About = () => {
                 <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
                   As a person, I am driven by my will to create. I love nothing more than to focus on a product, making it the best it can be. This shows in my long history of always having some project going on.
                 </p>
-
+                <div className="mb-4" />
                 <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
                   Besides creativity, I love working together with other people. In projects, I often find myself in leadership positions due to idea richness coupled with strong communication skills. I have found the key to good leadership to be balancing between being assertive while never forsaking the humbleness of listening to other people and reaching group decisions.
 
                   Another perspective on leadership that I like is that a good leader is also a good servant. What I take from this saying is that a good leader achieves the best outcome by enabling team members to reach their own best potential. This also goes along with the quote of Lao Tzu:
-
-                  "A leader is best when people barely know he exists, when his work is done, his aim fulfilled, they will say: we did it ourselves."
                 </p>
+                <div className="mb-4" />
+                <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+                  <i>
+                    "A leader is best when people barely know he exists, when his work is done, his aim fulfilled, they will say: we did it ourselves."
+                  </i>
+                </p>
+
               </Reveal>
             </div>
           </div>
