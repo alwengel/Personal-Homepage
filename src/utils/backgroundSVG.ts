@@ -14,7 +14,7 @@ export const generateBackgroundSVG = (color: string): string => {
         <rect width="100%" height="100%" fill="white" />
   
         <!-- Inner rectangle with color -->
-        <rect x="25" y="5" width="100%" height="100%" fill="${color}" />
+        <rect x="10" y="5" width="99%" height="100%" fill="${color}" />
       </svg>
     `;
   };

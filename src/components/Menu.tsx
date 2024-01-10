@@ -32,14 +32,6 @@ const Menu = () => {
         </Tooltip>
       </Link>
 
-      <Link to="projects" smooth>
-        <Tooltip title="Projects" placement="top" arrow>
-          <IconButton className="group">
-            <AppsIcon className="text-white group-hover:text-secondary" />
-          </IconButton>
-        </Tooltip>
-      </Link>
-
       <Link to="contact" smooth>
         <Tooltip title="Contact" placement="top" arrow>
           <IconButton className="group">
