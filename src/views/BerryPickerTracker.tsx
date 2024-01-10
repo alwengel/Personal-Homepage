@@ -47,7 +47,7 @@ const BerryPickerTracker = () => {
           
           <div className="flex-1">
             <Reveal>
-            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary" style={{ color: 'Black' }}>
                 The Berry Picker Tracker is a mobile application that lets a person track their position and share it with a selection of people.
                 It displays your location on a map and shows the route you have been taking. You can adjust the frequency of location information
                 sending to save battery. The application also warns you when you enter an area with low connectivity.
