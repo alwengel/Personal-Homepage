@@ -71,13 +71,50 @@ const Hero = () => {
             alt=""
             className="max-w-full sm:max-w-[401px] rounded-full block sm:hidden"
           />
-          <motion.div 
+
+        </div>
+        <div className="my-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
+          <SocialMediaIcon imgSrc={outlookIcon} title="Email" />
+          <div className="mb-1 sm:mb-0"><strong>Email:</strong> alexander.engelhardt{"(at)"}helsinki.fi</div>
+        </div>
+
+        <div className="my-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
+          <SocialMediaIcon imgSrc={linkedInIcon} title="LinkedIn" />
+          <div className="mb-1 sm:mb-0"><strong>LinkedIn:</strong> .......</div>
+        </div>
+
+        <div className="my-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
+          <SocialMediaIcon imgSrc={githubIcon} title="Github" href="https://github.com/Catrovitch"/>
+          <div className="mb-1 sm:mb-0"><strong>Github:</strong> Catrovitch</div>
+        </div>
+
+
+
+
+
+
+        
+      </div>
+      <div>
+        <motion.img
+              variants={scale()}
+              transition={transition()}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false}}
+              src={alexanderProfilePic}
+              alt=""
+              className="max-w-full sm:max-w-[401px] rounded-full hidden sm:block"
+            />
+      <div>
+      <div className="mb-4" />
+        <motion.div 
             variants={fadeIn("up")}
             transition={transition()}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false}}
-            className="flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
+            className="flex flex-row sm:flex-row items-center gap-6 justify-center">
             <Button
               icon={downloadIcon}
               onClick={() => downloadFile({ fileUrl: cv, fileName: 'Alexander_Engelhardt_CV.pdf' })}
@@ -85,48 +122,9 @@ const Hero = () => {
               Download CV
             </Button>
           </motion.div>
-
-          <motion.div 
-          variants={fadeIn("up")}
-          transition={transition()}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false}}
-          className="flex items-center justify-center xl:justify-start gap-6">
-        </motion.div>
-
-
-        </div>
-        <div className="my-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start">
-          <SocialMediaIcon imgSrc={outlookIcon} title="Email" />
-          <div className="mb-1 sm:mb-0">Email: alexander.engelhardt{"(at)"}helsinki.fi</div>
-        </div>
-
-        <div className="my-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start">
-          <SocialMediaIcon imgSrc={linkedInIcon} title="LinkedIn" />
-          <div className="mb-1 sm:mb-0">LinkedIn: --------------------------</div>
-        </div>
-
-        <div className="my-6 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start">
-          <SocialMediaIcon imgSrc={githubIcon} title="Github" href="https://github.com/Catrovitch"/>
-          <div className="mb-1 sm:mb-0">Github: Catrovitch</div>
-        </div>
-
-
-
-
-        
       </div>
-      <motion.img
-            variants={scale()}
-            transition={transition()}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false}}
-            src={alexanderProfilePic}
-            alt=""
-            className="max-w-full sm:max-w-[401px] rounded-full hidden sm:block"
-          />
+      </div>
+
     </div>
 
   </div>
