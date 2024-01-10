@@ -50,21 +50,23 @@ const BachelorsThesis = () => {
           
           <div className="flex-1">
             <Reveal>
+            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary" style={{ color: 'Black' }}>
+              With the help of my supervisor, Docent Jeremias Berg I iteratively worked on the thesis. At the end I reached a great text that earned me the highest possible grade. 
+              The somewhat strict criteria for how the thesis should be written was a stimulating endeavor that let me challenge myself. As I have always loved writing, the process
+              of writing the thesis was fun to me. I have strived to make the thesis as understanable and enjoyble to read as possible, even for people without expert knowledge.
+              If you are interested you can download the thesis by clicking the download button beneath the picture.
+            </p>
+
+          
+
+            <div className="mb-4" />
+
             <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
               The topic of my bachelor's thesis is how the core structural differences between Monolithic- and Microservice architecture has great impact on what can be
               achieved with a software. More specifically it compares how the two architectures differ in their ability to perform, scale with numbers of users, deploy and be cyber secure.
               These qualities where chosen on the basis of being especially important when comparing Monolithic- and Microservice architecture in specific while also constituting crucial
               qualitites in their own right.
 
-            </p>
-          
-
-            <div className="mb-4" />
-
-            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-              With the help of my supervisor, Docent Jeremias Berg I iteratively worked on the thesis. At the end I reached a great text that earned me the highest possible grade. As I have always loved
-              writing, the process of writing the thesis was fun to me. I also strived to make the thesis as understanable and enjoyble to read as possible. If you are interested you can download the thesis
-              by clicking the button beneath the picture.
             </p>
           
 
