@@ -16,7 +16,6 @@ const HomeView = () => (
   <>
     <Hero />
     <About />
-    <Projects />
     <Contact />
     <Menu />
     

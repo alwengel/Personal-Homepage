@@ -77,7 +77,7 @@ const Projects = () => {
           viewport={{ once: false}} 
           className="flex gap-12 mt-12 flex-wrap justify-center">
           {filteredProjects().map((item) => (
-            <Card imgSrc={item.img} title={item.title}/>
+            <Card imgSrc={item.img} title={item.title} link={"https://github.com/Catrovitch/Online-course-website"}/>
           ))}
 
         </motion.div>
