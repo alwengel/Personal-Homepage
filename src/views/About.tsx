@@ -2,7 +2,7 @@
 import skillCircle from "../assets/AboutMeImage.png"
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2 } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -32,7 +32,7 @@ const About = () => {
         <ViewTitle mainText="About" spanText="me" spanColor="#ffd966" />
 
         <SectionWrapper2>
-          <div className="flex-1 flex flex-col xl:flex-row gap-4">
+          <SectionWrapper3>
             <div className="flex-1 xl:max-w-[25%]"> {/* Adjust the max-width as needed */}
               <Reveal>
                 <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
@@ -97,7 +97,7 @@ const About = () => {
 
               </Reveal>
             </div>
-          </div>
+            </SectionWrapper3>
           </SectionWrapper2>
 
         </SectionWrapper1>

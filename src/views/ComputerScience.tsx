@@ -3,7 +3,7 @@ import alexandersComputerSetUp from "../assets/Alexanders_Computer_Set_up_2024.j
 
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2 } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -34,9 +34,7 @@ const ComputerScience = () => {
         <ViewTitle mainText="Computer" spanText="Science" />
 
       <SectionWrapper2>
-
-  
-        <div className="flex-1 flex flex-col xl:flex-row gap-4">
+        <SectionWrapper3>
 
           
           <div className="flex-1">
@@ -83,7 +81,7 @@ const ComputerScience = () => {
               />
             </div>
           </div>
-        </div>
+          </SectionWrapper3>
         </SectionWrapper2>
       </SectionWrapper1>
     </div>

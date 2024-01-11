@@ -17,3 +17,10 @@ export const SectionWrapper2: React.FC<SectionWrapperProps> = ({ children }) => 
     {children}
   </div>
 );
+
+// Third SectionWrapper
+export const SectionWrapper3: React.FC<SectionWrapperProps> = ({ children }) => (
+  <div className="flex-1 flex flex-col xl:flex-row gap-4">
+    {children}
+  </div>
+)

@@ -8,7 +8,7 @@ import mern from "../assets/Mern.png"
 
 
 // components
-import { Reveal, Card, ViewTitle, SectionWrapper1, SectionWrapper2 } from "../components";
+import { Reveal, Card, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -37,7 +37,7 @@ const GithubProjects = () => {
           <ViewTitle mainText="Some other" spanText="Projects"/>
   
           <SectionWrapper2>
-            <div className="flex-1 flex flex-col xl:flex-row gap-4">
+            <SectionWrapper3>
                 <div className="flex-1 max-w-[700px]">
                 <Reveal>
                     <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary" style={{ color: 'Black' }}>
@@ -69,10 +69,10 @@ const GithubProjects = () => {
                     </div>
                 </Reveal>
                 </div>
-            </div>
+            </SectionWrapper3>
           </SectionWrapper2>
           <SectionWrapper2>
-            <div className="flex-1 flex flex-col xl:flex-row gap-4">
+            <SectionWrapper3>
   
               <div className="flex-1">
                 <Reveal>
@@ -108,7 +108,6 @@ const GithubProjects = () => {
                 </Reveal>
               </div>
   
-              {/* Personality */}
               <div className="flex-1">
                 <Reveal>
                   <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
@@ -166,7 +165,7 @@ const GithubProjects = () => {
                   </motion.div>
                 </Reveal>
               </div>
-            </div>
+            </SectionWrapper3>
           </SectionWrapper2>  
         </SectionWrapper1>
       </div>

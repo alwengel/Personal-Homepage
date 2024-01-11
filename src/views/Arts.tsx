@@ -3,7 +3,7 @@ import MusicPic from "../assets/Music_Picture.jpg";
 
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2 } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -36,7 +36,7 @@ const Arts = () => {
         <SectionWrapper2>
 
   
-        <div className="flex-1 flex flex-col xl:flex-row gap-4">
+          <SectionWrapper3>
 
           
           <div className="flex-1">
@@ -82,7 +82,7 @@ const Arts = () => {
               />
             </div>
           </div>
-        </div>
+          </SectionWrapper3>
         </SectionWrapper2>
       </SectionWrapper1>
     </div>
