@@ -8,7 +8,7 @@ import mern from "../assets/Mern.png"
 
 
 // components
-import { Reveal, Card, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph } from "../components";
+import { Reveal, Card, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph, Image } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -55,17 +55,9 @@ const GithubProjects = () => {
                         Visit my Github page by clicking this link.
                     </a>
                     <div className="ml-4">
-                        <motion.img
-                        variants={scale()}
-                        transition={transition()}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: false }}
-                        src={githubProfilePic}
-                        alt=""
-                        className="max-w-full sm:max-w-[50px] rounded-full"
-                        />
+                        <Image src={githubProfilePic} className="max-w-full sm:max-w-[50px] rounded-full" />
                     </div>
+                    
                     </div>
                 </Reveal>
                 </div>

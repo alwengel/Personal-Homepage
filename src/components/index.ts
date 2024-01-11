@@ -9,6 +9,7 @@ import YouTubeVideo from "./YoutubeVideo";
 import ViewTitle from "./ViewTitle";
 import { SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4 }  from "./SectionWrappers";
 import Paragraph from "./Paragraph";
+import Image from "./Image";
 
 
 export { 
@@ -25,4 +26,5 @@ export {
     SectionWrapper2, 
     SectionWrapper3, 
     SectionWrapper4, 
-    Paragraph };
+    Paragraph,
+    Image };

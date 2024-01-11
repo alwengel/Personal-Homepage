@@ -2,7 +2,7 @@
 import skillCircle from "../assets/AboutMeImage.png"
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, Paragraph } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, Paragraph, Image } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -33,7 +33,7 @@ const About = () => {
 
         <SectionWrapper2>
           <SectionWrapper3>
-            <div className="flex-1 xl:max-w-[25%]"> {/* Adjust the max-width as needed */}
+            <div className="flex-1 xl:max-w-[25%]">
               <Reveal>
                 <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
                   Interests
@@ -57,19 +57,7 @@ const About = () => {
               </Reveal>
             </div>
 
-            <div className="flex-1 xl:max-w-[50%]"> {/* Adjust the max-width as needed */}
-              <Reveal>
-              <motion.img
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                src={skillCircle}
-                alt=""
-                className="max-h-full max-w-full"
-              />
-
-              </Reveal>
-            </div>
+            <Image src={skillCircle} className="max-h-full max-w-full"/>
 
             <div className="flex-1 xl:max-w-[25%]"> {/* Adjust the max-width as needed */}
               <Reveal>
@@ -91,7 +79,7 @@ const About = () => {
                   that I like is that a good leader is also a good servant. What I take from this saying is that a good leader achieves the best outcome by enabling team members to reach their own best potential.
                   This also goes along with the quote of Lao Tzu:
                 </Paragraph>
-                
+
                 <div className="mb-4" />
 
                 <Paragraph>

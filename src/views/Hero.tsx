@@ -8,7 +8,7 @@ import outlookIcon from "../assets/outlook.icon.svg"
 
 
 // components
-import { SocialMediaIcon, Button, Reveal, SectionWrapper1 } from "../components";
+import { SocialMediaIcon, Button, Reveal, Image } from "../components";
 
 // react-simple-typewriter
 import { Typewriter } from "react-simple-typewriter";
@@ -59,20 +59,12 @@ const Hero = () => {
             ></Typewriter>
           </span> 
         </motion.h1>
-
-        <div className="my-6 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start">
-          <motion.img
-            variants={scale()}
-            transition={transition()}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false}}
-            src={alexanderProfilePic}
-            alt=""
-            className="max-w-full sm:max-w-[401px] rounded-full block sm:hidden"
-          />
         
-        </div>
+        <Image 
+          src={alexanderProfilePic}
+          className="max-w-full sm:max-w-[401px] rounded-full block sm:hidden"
+        />
+        
         <Reveal>
           <div className="my-1 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
             <SocialMediaIcon imgSrc={outlookIcon} title="Email" />
@@ -91,16 +83,18 @@ const Hero = () => {
         </Reveal>     
       </div>
       <div>
-        <motion.img
-              variants={scale()}
-              transition={transition()}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false}}
-              src={alexanderProfilePic}
-              alt=""
-              className="max-w-full sm:max-w-[401px] rounded-full hidden sm:block"
-            />
+        <div className="flex-1 flex items-center justify-center">
+          <motion.img
+                variants={scale()}
+                transition={transition()}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false}}
+                src={alexanderProfilePic}
+                alt=""
+                className="max-w-full sm:max-w-[401px] rounded-full hidden sm:block"
+              />
+        </div>
       <div>
       <div className="mb-8" />
         <motion.div 

@@ -5,7 +5,7 @@ import thesis from "../assets/Alexander-Engelhardt-Thesis.pdf"
 
 
 // components
-import { Reveal, Button, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper4, Paragraph } from "../components";
+import { Reveal, Button, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper4, Paragraph, Image } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -87,19 +87,9 @@ const BachelorsThesis = () => {
             
             <SectionWrapper4>
               <Reveal>
-                <div className="flex-1 flex flex-col items-center justify-center text-center">
-                    <motion.img
-                    variants={scale()}
-                    transition={transition()}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false}}
-                    src={bachelorFrontPage}
-                    alt=""
-                    className="max-w-full sm:max-w-[401px] mb-4" // Add margin-bottom to create space between image and button
-                    style={{ border: '1px solid #333' }}
-                    />
-
+                <div className="flex-1 flex flex-col items-center justify-center">
+                
+                <Image src={bachelorFrontPage} className="max-w-full sm:max-w-[401px] mb-4"/>
                     <Button
                     icon={downloadIcon}
                     onClick={() => downloadFile({ fileUrl: thesis, fileName: 'Alexander-Engelhardt-Thesis.pdf' })}

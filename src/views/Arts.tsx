@@ -3,7 +3,7 @@ import MusicPic from "../assets/Music_Picture.jpg";
 
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph, Image } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -62,17 +62,14 @@ const Arts = () => {
               </Reveal>
             </SectionWrapper4>
             <SectionWrapper4>
-                <motion.img
-                  variants={scale()}
-                  transition={transition()}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: false}}
-                  src={MusicPic}
-                  alt=""
-                  className="max-w-full sm:max-w-[401px]"
-                  style={{ border: '2px solid #333' }}
-                />
+
+              <Image 
+                src={MusicPic}
+                className="max-w-full sm:max-w-[401px]"
+                description="Picture 1. Me and my cat"
+                border={true}
+              />
+              
             </SectionWrapper4>
           </SectionWrapper3>
         </SectionWrapper2>

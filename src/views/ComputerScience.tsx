@@ -3,7 +3,7 @@ import alexandersComputerSetUp from "../assets/Alexanders_Computer_Set_up_2024.j
 
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph, Image } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -64,19 +64,12 @@ const ComputerScience = () => {
             </Reveal>
           </SectionWrapper4>
 
-            <div className="flex-1 flex items-center justify-center">
-              <motion.img
-                variants={scale()}
-                transition={transition()}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false}}
-                src={alexandersComputerSetUp}
-                alt=""
-                className="max-w-full sm:max-w-[401px]"
-                style={{ border: '2px solid #333' }} // Add this line for the border
-              />
-            </div>
+            <Image 
+              src={alexandersComputerSetUp} 
+              className="max-w-full sm:max-w-[401px]"
+              border={true}
+              description="Picture 1. Me and my set up."
+            />
 
           </SectionWrapper3>
         </SectionWrapper2>

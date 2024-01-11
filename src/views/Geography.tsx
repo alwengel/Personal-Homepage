@@ -3,7 +3,7 @@ import rotatingEarth from "../assets/Rotating_earth.gif";
 
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph, Image } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -60,18 +60,12 @@ const Geography = () => {
               </Reveal>
             </SectionWrapper4>
 
-              <div className="flex-1 flex items-center justify-center">
-                <motion.img
-                  variants={scale()}
-                  transition={transition()}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: false}}
-                  src={rotatingEarth}  // Replace with the actual path to your gif file
-                  alt="Rotating Earth"
-                  className="max-w-full sm:max-w-[401px]" 
-                />
-              </div>
+
+              <Image 
+                src={rotatingEarth}
+                className="max-w-full sm:max-w-[401px]"
+                description="Picture 1. Spinning right round, right round..."
+              />
       
           </SectionWrapper3>
         </SectionWrapper2>

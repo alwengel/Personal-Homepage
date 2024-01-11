@@ -4,15 +4,19 @@ import berryIcon from "../assets/berryPickerTrackerIcon.png"
 
 
 // components
-import { Reveal, YouTubeVideo, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph } from "../components";
-
-// framer-motion
-import { motion } from "framer-motion";
+import { 
+  Reveal, 
+  YouTubeVideo, 
+  ViewTitle, 
+  SectionWrapper1, 
+  SectionWrapper2, 
+  SectionWrapper3, 
+  SectionWrapper4, 
+  Paragraph, 
+  Image } from "../components";
 
 
 // utils
-import { scale } from "../utils/variants";
-import { transition } from "../utils/transition";
 import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
 const BerryPickerTracker = () => {
@@ -91,34 +95,19 @@ const BerryPickerTracker = () => {
             
             <SectionWrapper4>
               <Reveal>
-              <div className="flex-1 flex flex-col items-center justify-center text-center">
-                  <motion.img
-                  variants={scale()}
-                  transition={transition()}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: false}}
+                <Image 
                   src={berryIcon}
-                  alt=""
-                  className="max-w-full sm:max-w-[401px] mb-2" // Reduce bottom margin
-                  />
-                  <div className="max-w-md mx-auto"> {/* Container with maximum width */}
-                  <p className="text-left xl:text-start text-xs sm:text-sm text-textSecondary">
-                      Picture 2. The Logo of the berry picker tracker app. An extra thing which I wanted to add to the application was a new logo - so I made one!
-                  </p>
-                  </div>
+                  className="max-w-full sm:max-w-[401px] mb-2"
+                  description="Picture 2. The Logo of the berry picker tracker app. An extra thing which I wanted to add to the application was a new logo - so I made one!"
+                />
 
-              </div>
-
-              <div className="mb-4" />
-              <div className="flex-1 flex flex-col items-center justify-center text-center">
-                  <YouTubeVideo videoId={"KN5oLobccWY"} className="max-w-full" />
-                  <div className="max-w-md mx-auto"> {/* Container with maximum width */}
-                  <div className="mb-2"/>
-                  <p className="text-left xl:text-start text-xs sm:text-sm text-textSecondary">
-                      Video 1. Watch a demonstration video our group made at the end of the project</p>
-                  </div>
-              </div>
+                <div className="mb-4" />
+                
+                <YouTubeVideo 
+                  videoId={"KN5oLobccWY"}
+                  className="max-w-full"
+                  description="Video 1. Watch a demonstration video our group made at the end of the project"
+                />
 
               </Reveal>
             </SectionWrapper4>
