@@ -10,24 +10,15 @@ import mern from "../assets/Mern.png"
 // components
 import { 
   Reveal, 
-  Card, 
   ViewTitle,
-  ViewTitleSub,
+  ProjectQuickLook,
   SectionWrapper0, 
   SectionWrapper1, 
   SectionWrapper2, 
   SectionWrapper3, 
-  SectionWrapper4, 
-  Paragraph, 
   Image, 
   Link } from "../components";
 
-// framer-motion
-import { motion } from "framer-motion";
-
-import { transition } from "../utils/transition";
-
-import { scale } from "../utils/variants";
 
 const GithubProjects = () => {
 
@@ -64,93 +55,39 @@ const GithubProjects = () => {
 
           <SectionWrapper2>
             <SectionWrapper3>
-  
-              <SectionWrapper4>
-                <Reveal>
-                  <ViewTitleSub header="Course-website" color="Black"/>
 
-                  <Paragraph>
-                    This web application lays the ground for an online course library where one can learn various subjects. It follows a traditional web application structure using
-                    HTML and CSS in the frontend coupled with a Python-managed PostgreSQL backend. The application is built using Flask and is hosted on Fly.io. Visit the webpage {" "}
+              <ProjectQuickLook 
+                projectName="Course-Website"
+                projectLink="https://online-course-website.fly.dev/"
+                projectLinkString="here." 
+                projectImageSrc={babyAndUniverse}
+              >
+                This web application lays the ground for an online course library where one can learn various subjects. 
+                It follows a traditional web application structure using HTML and CSS in the frontend coupled with a 
+                Python-managed PostgreSQL backend. The application is built using Flask and is hosted on Fly.io. Visit the webpage {" "}
+              </ProjectQuickLook>
 
-                    <Link 
-                      href="https://online-course-website.fly.dev/"
-                      linkString="here"
-                    />
-                    .
-                  </Paragraph>
-                
-                  <motion.div
-                    variants={scale()}
-                    transition={transition()}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false}} 
-                    className="flex gap-12 mt-12 flex-wrap justify-center">
-    
-                    <Card 
-                      imgSrc={babyAndUniverse} 
-                      title={"Online-course"} 
-                      link={"https://github.com/Catrovitch/Online-course-website"}
-                    />
+              <ProjectQuickLook
+                projectName="Bismarck"
+                projectImageSrc={bismarck}
+                projectLink="https://github.com/Catrovitch/Bismarck"
+              >
+                Bismarck is a classic card game which is played between two players each striving to defeat the other through strategy and careful planning.
+                It is a desktop application built using Python and Pygame. This was my first programming project using Github, and the focus was on 
+                good practices over fancy graphics and complex mechanics.
+              </ProjectQuickLook>
 
-                  </motion.div>
+              <ProjectQuickLook
+                projectName="Full-Stack Open"
+                projectImageSrc={mern}
+                projectLink="https://fullstackopen.com/en/#course-contents"
+                projectLinkString="here"
+              >
+                This repository contains various projects related to the valued course Full-Stack Open at University of Helsinki. The topics of the course
+                ranges from basic JavaScript and Node.js to full end-to-end testing, containerization and
+                continuous development. For greater detail about the visit the Full-Stack Open course webpage {" "}
+              </ProjectQuickLook>
 
-                </Reveal>
-              </SectionWrapper4>
-  
-
-              <SectionWrapper4>
-                <Reveal>
-                <ViewTitleSub header="Bismarck" color="Black"/>
-                  <Paragraph>
-                    Bismarck is a classic card game which is played between two players each striving to defeat the other through strategy and careful planning.
-                    It is a desktop appliction built using Python and Pygame. This was my first programming project using Github and the focus was on good practices
-                    over fancy graphics and complex mechanics.
-                  </Paragraph>
-                
-                  <motion.div
-                    variants={scale()}
-                    transition={transition()}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false}} 
-                    className="flex gap-12 mt-12 flex-wrap justify-center">
-    
-                    <Card imgSrc={bismarck} title={"Bismarck"} link={"https://github.com/Catrovitch/Bismarck"}/>
-
-                  </motion.div>
-                </Reveal>
-              </SectionWrapper4>
-  
-              <SectionWrapper4>
-                <Reveal>
-                  <ViewTitleSub header="Full-Stack Open" color="Black"/>
-                  <Paragraph>
-                    This repository contains various projects related to the valued course Full-Stack Open at University of Helsinki. The topics of the course
-                    ranges from basic JavaScript and Node.js to full end-to-end testing, containerization and
-                    continuous development. For greater detail about the visit the Full-Stack Open course webpage {" "}
-
-                    <Link 
-                      href="https://fullstackopen.com/en/#course-contents"
-                      linkString="here"
-                    />
-                    .
-                  </Paragraph>
-                
-                  <motion.div
-                    variants={scale()}
-                    transition={transition()}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false}} 
-                    className="flex gap-12 mt-12 flex-wrap justify-center">
-    
-                    <Card imgSrc={mern} title={"Full-Stack-Open"} link={"https://github.com/Catrovitch/Full-Stack-Open-Exercises"}/>
-
-                  </motion.div>
-                </Reveal>
-              </SectionWrapper4>
             </SectionWrapper3>
           </SectionWrapper2>  
         </SectionWrapper1>

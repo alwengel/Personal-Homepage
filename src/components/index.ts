@@ -13,6 +13,7 @@ import { SectionWrapper0, SectionWrapper1, SectionWrapper2, SectionWrapper3, Sec
 import Paragraph from "./Paragraph";
 import Image from "./Image";
 import Link from "./Link";
+import ProjectQuickLook from "./ProjectQuickLook";
 
 
 export { 
@@ -34,4 +35,5 @@ export {
     SectionWrapper4, 
     Paragraph,
     Image,
-    Link };
+    Link,
+    ProjectQuickLook };
