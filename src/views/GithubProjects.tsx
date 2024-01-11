@@ -8,7 +8,7 @@ import mern from "../assets/Mern.png"
 
 
 // components
-import { Reveal, Card, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph, Image } from "../components";
+import { Reveal, Card, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph, Image, Link } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -45,24 +45,21 @@ const GithubProjects = () => {
                     </p>
                     <div className="mb-4" />
                     <div className="flex items-center">
-                    <a
-                        href="https://github.com/marjanpoimijat"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-left xl:text-start text-base sm:text-lg text-textSecondary"
-                        style={{ color: '#6fa8dc', textDecoration: 'underline' }}
-                    >
-                        Visit my Github page by clicking this link.
-                    </a>
-                    <div className="ml-4">
-                        <Image src={githubProfilePic} className="max-w-full sm:max-w-[50px] rounded-full" />
-                    </div>
-                    
+
+                      <Link 
+                        href="https://github.com/Catrovitch"
+                        linkString="Visit my Github page by clicking this link" 
+                      />
+                      <div className="ml-4">
+                          <Image src={githubProfilePic} className="max-w-full sm:max-w-[50px] rounded-full" />
+                      </div>
+
                     </div>
                 </Reveal>
                 </div>
             </SectionWrapper3>
           </SectionWrapper2>
+
           <SectionWrapper2>
             <SectionWrapper3>
   
@@ -73,16 +70,14 @@ const GithubProjects = () => {
                   </h3>
 
                   <Paragraph>
-                        This web application lays the ground for an online course library where one can learn various subjects. It follows a traditional web application structure using
-                        HTML and CSS in the frontend coupled with a Python-managed PostgreSQL backend. The application is built using Flask and is hosted on Fly.io. Visit the webpage {" "}
-                        <a
-                            href="https://online-course-website.fly.dev/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-500 underline"
-                        >
-                            here
-                        </a>.
+                    This web application lays the ground for an online course library where one can learn various subjects. It follows a traditional web application structure using
+                    HTML and CSS in the frontend coupled with a Python-managed PostgreSQL backend. The application is built using Flask and is hosted on Fly.io. Visit the webpage {" "}
+
+                    <Link 
+                      href="https://online-course-website.fly.dev/"
+                      linkString="here"
+                    />
+                    .
                   </Paragraph>
                 
                   <motion.div
@@ -93,7 +88,11 @@ const GithubProjects = () => {
                     viewport={{ once: false}} 
                     className="flex gap-12 mt-12 flex-wrap justify-center">
     
-                    <Card imgSrc={babyAndUniverse} title={"Online-course"} link={"https://github.com/Catrovitch/Online-course-website"}/>
+                    <Card 
+                      imgSrc={babyAndUniverse} 
+                      title={"Online-course"} 
+                      link={"https://github.com/Catrovitch/Online-course-website"}
+                    />
 
                   </motion.div>
 
@@ -132,18 +131,16 @@ const GithubProjects = () => {
                         <span className="text-secondary">Full-Stack Open</span>
                     </h3>
                     <Paragraph>
-                        This repository contains various projects related to the valued course Full-Stack Open at University of Helsinki. The topics of the course
-                        ranges from basic JavaScript and Node.js to full end-to-end testing, containerization and
-                        continuous development. For greater detail about the visit the Full-Stack Open course webpage {" "}
-                        <a
-                            href="https://fullstackopen.com/en/#course-contents"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-500 underline"
-                        >
-                            here
-                        </a>.
-                      </Paragraph>
+                      This repository contains various projects related to the valued course Full-Stack Open at University of Helsinki. The topics of the course
+                      ranges from basic JavaScript and Node.js to full end-to-end testing, containerization and
+                      continuous development. For greater detail about the visit the Full-Stack Open course webpage {" "}
+
+                      <Link 
+                        href="https://fullstackopen.com/en/#course-contents"
+                        linkString="here"
+                      />
+                      .
+                    </Paragraph>
                 
                   <motion.div
                     variants={scale()}

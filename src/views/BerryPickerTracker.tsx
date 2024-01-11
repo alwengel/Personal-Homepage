@@ -13,7 +13,8 @@ import {
   SectionWrapper3, 
   SectionWrapper4, 
   Paragraph, 
-  Image } from "../components";
+  Image, 
+  Link} from "../components";
 
 
 // utils
@@ -52,15 +53,10 @@ const BerryPickerTracker = () => {
 
                 <div className="mb-4" />
 
-                <a
-                    href="https://github.com/marjanpoimijat"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-left xl:text-start text-base sm:text-lg text-textSecondary"
-                    style={{ color: '#6fa8dc', textDecoration: 'underline' }}
-                    >
-                    Visit the Berry Picker Tracker Github project page.
-                </a>
+                <Link 
+                  href="https://github.com/marjanpoimijat"
+                  linkString="Visit the Berry Picker Tracker Github project page."
+                />
 
                 <div className="mb-4" />
 

@@ -10,6 +10,7 @@ import ViewTitle from "./ViewTitle";
 import { SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4 }  from "./SectionWrappers";
 import Paragraph from "./Paragraph";
 import Image from "./Image";
+import Link from "./Link";
 
 
 export { 
@@ -27,4 +28,5 @@ export {
     SectionWrapper3, 
     SectionWrapper4, 
     Paragraph,
-    Image };
+    Image,
+    Link };
