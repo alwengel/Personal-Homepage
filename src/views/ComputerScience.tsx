@@ -3,13 +3,13 @@ import alexandersComputerSetUp from "../assets/Alexanders_Computer_Set_up_2024.j
 
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4 } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
 
 // utils
-import { fadeIn, scale } from "../utils/variants";
+import { scale } from "../utils/variants";
 import { transition } from "../utils/transition";
 import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
@@ -34,39 +34,36 @@ const ComputerScience = () => {
         <ViewTitle mainText="Computer" spanText="Science" />
 
       <SectionWrapper2>
-        <SectionWrapper3>
-
-          
+        <SectionWrapper3>          
           <SectionWrapper4>
             <Reveal>        
-            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-              Just some years ago I would not have seen myself loving computer science. Though I had always faired well in all subjects in school
-              I used to feel that my true calling was in arts, people skills and big picture thinking. In upper secondary school I seriously considered 
-              a career as a musician. When studying for the final exams and more specifically Geography, I noticed how I noticed how my increased
-              understanding of the world also led to greater meaning in my artistic works. This led to me applying and getting accepted to the bachelor's 
-              degree in geography.
+              <Paragraph>
+                Just some years ago I would not have seen myself loving computer science. Though I had always faired well in all subjects in school
+                I used to feel that my true calling was in arts, people skills and big picture thinking. In upper secondary school I seriously considered 
+                a career as a musician. When studying for the final exams and more specifically Geography, I noticed how I noticed how my increased
+                understanding of the world also led to greater meaning in my artistic works. This led to me applying and getting accepted to the bachelor's 
+                degree in geography.
+              </Paragraph>
 
-            </p>
-          
+              <div className="mb-4" />
 
-            <div className="mb-4" />
+              <Paragraph>
+                Then how come I have ended up studying Computer science? The answer to this is that during my studies of geography I found my self appriciating the
+                technical courses the most as I felt that these gave me the most valuable and tangible skills. This culminated in me switching from the bachelor's 
+                programme in geography to the bachelor's programme in computer science. Ever since I have felt that computer science has given growth to my 
+                character where I not only posess a keen artistic eye, big picture analytical thinking that geography entails, but also robust technical insight.
+              </Paragraph>
 
-            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-              Then how come I have ended up studying Computer science? The answer to this is that during my studies of geography I found my self appriciating the
-              technical courses the most as I felt that these gave me the most valuable and tangible skills. This culminated in me switching from the bachelor's 
-              programme in geography to the bachelor's programme in computer science. Ever since I have felt that computer science has given growth to my 
-              character where I not only posess a keen artistic eye, big picture analytical thinking that geography entails, but also robust technical insight.
-            </p>
+              <div className="mb-4" />
 
-            <div className="mb-4" />
+              <Paragraph>
+                Scroll down this page to read about some of my projects or other works related to computer science. 
+              </Paragraph>
 
-            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-              Scroll down this page to read about some of my projects or other works related to computer science. 
-            </p>
 
             </Reveal>
           </SectionWrapper4>
-          
+
             <div className="flex-1 flex items-center justify-center">
               <motion.img
                 variants={scale()}

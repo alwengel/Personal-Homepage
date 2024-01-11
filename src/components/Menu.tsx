@@ -4,8 +4,6 @@ import { IconButton, Tooltip } from "@mui/material";
 // mui - icons
 import HomeIcon from "@mui/icons-material/Home";
 import PersonIcon from "@mui/icons-material/Person";
-import AppsIcon from "@mui/icons-material/Apps";
-import MailIcon from "@mui/icons-material/Mail";
 
 // react-scroll
 import { Link } from "react-scroll";
@@ -28,14 +26,6 @@ const Menu = () => {
         <Tooltip title="About" placement="top" arrow>
           <IconButton className="group">
             <PersonIcon className="text-white group-hover:text-secondary" />
-          </IconButton>
-        </Tooltip>
-      </Link>
-
-      <Link to="contact" smooth>
-        <Tooltip title="Contact" placement="top" arrow>
-          <IconButton className="group">
-            <MailIcon className="text-white group-hover:text-secondary" />
           </IconButton>
         </Tooltip>
       </Link>
