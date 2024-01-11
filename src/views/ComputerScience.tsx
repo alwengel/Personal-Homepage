@@ -3,7 +3,7 @@ import alexandersComputerSetUp from "../assets/Alexanders_Computer_Set_up_2024.j
 
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3 } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -37,7 +37,7 @@ const ComputerScience = () => {
         <SectionWrapper3>
 
           
-          <div className="flex-1">
+          <SectionWrapper4>
             <Reveal>        
             <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
               Just some years ago I would not have seen myself loving computer science. Though I had always faired well in all subjects in school
@@ -65,8 +65,8 @@ const ComputerScience = () => {
             </p>
 
             </Reveal>
-          </div>
-          <div className="flex-1">
+          </SectionWrapper4>
+          
             <div className="flex-1 flex items-center justify-center">
               <motion.img
                 variants={scale()}
@@ -80,7 +80,7 @@ const ComputerScience = () => {
                 style={{ border: '2px solid #333' }} // Add this line for the border
               />
             </div>
-          </div>
+
           </SectionWrapper3>
         </SectionWrapper2>
       </SectionWrapper1>

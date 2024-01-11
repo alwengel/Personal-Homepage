@@ -3,7 +3,7 @@ import MusicPic from "../assets/Music_Picture.jpg";
 
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3 } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -34,54 +34,48 @@ const Arts = () => {
         <ViewTitle mainText="Arts" mainColor="black"/>
 
         <SectionWrapper2>
-
-  
           <SectionWrapper3>
+            <SectionWrapper4>
+              <Reveal>        
+              <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+                During my whole life I have always been interested in creative arts, be it music, writing, photography
+                film, painting or something else. I started playing the classical piano at age seven. This included music
+                theory and though I have since experimented with various forms of music the core beauty of classical music
+                has always stuck with me.  
 
-          
-          <div className="flex-1">
-            <Reveal>        
-            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-              During my whole life I have always been interested in creative arts, be it music, writing, photography
-              film, painting or something else. I started playing the classical piano at age seven. This included music
-              theory and though I have since experimented with various forms of music the core beauty of classical music
-              has always stuck with me.  
+              </p>
+              
 
-            </p>
-            
+              <div className="mb-4" />
 
-            <div className="mb-4" />
+              <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+                Modern technology has allowed me to approach my artistic goals without sacrificing my main career.
+                At home I have my own little studio and using virtual instruments the sky is the limit. For example,
+                at my fingertips I have the possibility of commanding the BBC philharmonic orchestra, combining it with
+                the sceraming sounds of my electric guitar.  
+              </p>
 
-            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-              Modern technology has allowed me to approach my artistic goals without sacrificing my main career.
-              At home I have my own little studio and using virtual instruments the sky is the limit. For example,
-              at my fingertips I have the possibility of commanding the BBC philharmonic orchestra, combining it with
-              the sceraming sounds of my electric guitar.  
-            </p>
+              <div className="mb-4" />
 
-            <div className="mb-4" />
+              <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+                Some of my current projects are a musical concept album and a semi-professional surrealistic horror comedy film. 
+              </p>
 
-            <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
-              Some of my current projects are a musical concept album and a semi-professional surrealistic horror comedy film. 
-            </p>
-
-            </Reveal>
-          </div>
-          <div className="flex-1">
-            <div className="flex-1 flex items-center justify-center">
-              <motion.img
-                variants={scale()}
-                transition={transition()}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false}}
-                src={MusicPic}
-                alt=""
-                className="max-w-full sm:max-w-[401px]"
-                style={{ border: '2px solid #333' }} // Add this line for the border
-              />
-            </div>
-          </div>
+              </Reveal>
+            </SectionWrapper4>
+            <SectionWrapper4>
+                <motion.img
+                  variants={scale()}
+                  transition={transition()}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false}}
+                  src={MusicPic}
+                  alt=""
+                  className="max-w-full sm:max-w-[401px]"
+                  style={{ border: '2px solid #333' }}
+                />
+            </SectionWrapper4>
           </SectionWrapper3>
         </SectionWrapper2>
       </SectionWrapper1>

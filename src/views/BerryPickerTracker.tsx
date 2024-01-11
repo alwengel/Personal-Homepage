@@ -4,7 +4,7 @@ import berryIcon from "../assets/berryPickerTrackerIcon.png"
 
 
 // components
-import { Reveal, YouTubeVideo, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3 } from "../components";
+import { Reveal, YouTubeVideo, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -37,7 +37,7 @@ const BerryPickerTracker = () => {
         <SectionWrapper2>
           <SectionWrapper3>
 
-            <div className="flex-1">
+            <SectionWrapper4>
               <Reveal>
               <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary" style={{ color: 'Black' }}>
                   The Berry Picker Tracker is a mobile application that lets a person track their position and share it with a selection of people.
@@ -94,9 +94,9 @@ const BerryPickerTracker = () => {
               </p>
 
               </Reveal>
-            </div>
+            </SectionWrapper4>
             
-            <div className="flex-1">
+            <SectionWrapper4>
               <Reveal>
               <div className="flex-1 flex flex-col items-center justify-center text-center">
                   <motion.img
@@ -128,7 +128,7 @@ const BerryPickerTracker = () => {
               </div>
 
               </Reveal>
-            </div>
+            </SectionWrapper4>
 
           </SectionWrapper3>
         </SectionWrapper2>

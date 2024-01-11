@@ -5,7 +5,7 @@ import thesis from "../assets/Alexander-Engelhardt-Thesis.pdf"
 
 
 // components
-import { Reveal, Button, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3 } from "../components";
+import { Reveal, Button, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -37,10 +37,7 @@ const BachelorsThesis = () => {
         <ViewTitle mainText="Bachelor's" spanText="Thesis"/>
 
         <SectionWrapper2>
-          <SectionWrapper3>
-
-          
-            <div className="flex-1">
+            <SectionWrapper4>
               <Reveal>
               <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary" style={{ color: 'Black' }}>
                 With the help of my supervisor, Docent Jeremias Berg I iteratively worked on the thesis. At the end I reached a great text that earned me the highest possible grade. 
@@ -86,9 +83,9 @@ const BachelorsThesis = () => {
               </p>
 
               </Reveal>
-            </div>
+            </SectionWrapper4>
             
-            <div className="flex-1">
+            <SectionWrapper4>
               <Reveal>
               <div className="flex-1 flex flex-col items-center justify-center text-center">
                   <motion.img
@@ -129,9 +126,7 @@ const BachelorsThesis = () => {
                 writing about software architecture and quality attributes on a theoretical level and instead focused on comparing two examples.  
               </p>
               </Reveal>
-            </div>
-
-          </SectionWrapper3>
+            </SectionWrapper4>
         </SectionWrapper2>
       </SectionWrapper1>
     </div>

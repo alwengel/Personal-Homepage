@@ -8,7 +8,7 @@ import mern from "../assets/Mern.png"
 
 
 // components
-import { Reveal, Card, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3 } from "../components";
+import { Reveal, Card, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -74,7 +74,7 @@ const GithubProjects = () => {
           <SectionWrapper2>
             <SectionWrapper3>
   
-              <div className="flex-1">
+              <SectionWrapper4>
                 <Reveal>
                   <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
                     <span className="text-secondary">Course-Website</span>
@@ -106,9 +106,10 @@ const GithubProjects = () => {
                   </motion.div>
 
                 </Reveal>
-              </div>
+              </SectionWrapper4>
   
-              <div className="flex-1">
+
+              <SectionWrapper4>
                 <Reveal>
                   <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
                     <span className="text-secondary">Bismarck</span>
@@ -131,9 +132,9 @@ const GithubProjects = () => {
 
                   </motion.div>
                 </Reveal>
-              </div>
+              </SectionWrapper4>
   
-              <div className="flex-1">
+              <SectionWrapper4>
                 <Reveal>
                     <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
                         <span className="text-secondary">Full-Stack Open</span>
@@ -164,7 +165,7 @@ const GithubProjects = () => {
 
                   </motion.div>
                 </Reveal>
-              </div>
+              </SectionWrapper4>
             </SectionWrapper3>
           </SectionWrapper2>  
         </SectionWrapper1>

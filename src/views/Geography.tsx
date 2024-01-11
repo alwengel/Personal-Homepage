@@ -3,7 +3,7 @@ import rotatingEarth from "../assets/Rotating_earth.gif";
 
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3 } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -34,10 +34,8 @@ const Geography = () => {
         <ViewTitle mainText="Geography: " spanText="A Greater Context"/>
 
         <SectionWrapper2>
-          <SectionWrapper3>
-
-          
-            <div className="flex-1">
+          <SectionWrapper3>   
+            <SectionWrapper4>
               <Reveal>        
               <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
                 Why do I value geography? It is because no other discipline is as interdisciplinary as geography.
@@ -61,8 +59,8 @@ const Geography = () => {
               </p>
 
               </Reveal>
-            </div>
-            <div className="flex-1">
+            </SectionWrapper4>
+
               <div className="flex-1 flex items-center justify-center">
                 <motion.img
                   variants={scale()}
@@ -75,8 +73,7 @@ const Geography = () => {
                   className="max-w-full sm:max-w-[401px]" 
                 />
               </div>
-            </div>
-
+      
           </SectionWrapper3>
         </SectionWrapper2>
       </SectionWrapper1>

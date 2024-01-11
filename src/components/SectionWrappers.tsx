@@ -24,3 +24,10 @@ export const SectionWrapper3: React.FC<SectionWrapperProps> = ({ children }) => 
     {children}
   </div>
 )
+
+// Fourth SectionWrapper
+export const SectionWrapper4: React.FC<SectionWrapperProps> = ({ children }) => (
+  <div className="flex-1">
+    {children}
+  </div>
+)
