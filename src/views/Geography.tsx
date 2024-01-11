@@ -3,7 +3,7 @@ import rotatingEarth from "../assets/Rotating_earth.gif";
 
 
 // components
-import { Reveal, ViewTitle } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -12,16 +12,15 @@ import { motion } from "framer-motion";
 import { fadeIn, scale } from "../utils/variants";
 import { transition } from "../utils/transition";
 import { generateBackgroundSVG } from "../utils/backgroundSVG";
-import { ViewTimeline } from "@mui/icons-material";
 
 
-const About = () => {
+const Geography = () => {
 
   const svgString = generateBackgroundSVG("#38761d")
 
   return (
     <div
-      id="about"
+      id="geography"
       className="min-h-screen flex items-center justify-center relative"
       style={{
         background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
@@ -30,11 +29,11 @@ const About = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-1">
+      <SectionWrapper1>
 
         <ViewTitle mainText="Geography: " spanText="A Greater Context"/>
 
-      <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
+      <SectionWrapper2>
 
   
         <div className="flex-1 flex flex-col xl:flex-row gap-4">
@@ -81,10 +80,10 @@ const About = () => {
           </div>
 
         </div>
-      </div>
-    </div>
+        </SectionWrapper2>
+      </SectionWrapper1>
     </div>
   );
 }
 
-export default About;
+export default Geography;
