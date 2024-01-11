@@ -7,7 +7,8 @@ import berryIcon from "../assets/berryPickerTrackerIcon.png"
 import { 
   Reveal, 
   YouTubeVideo, 
-  ViewTitle, 
+  ViewTitle,
+  SectionWrapper0,
   SectionWrapper1, 
   SectionWrapper2, 
   SectionWrapper3, 
@@ -17,24 +18,12 @@ import {
   Link} from "../components";
 
 
-// utils
-import { generateBackgroundSVG } from "../utils/backgroundSVG";
+
 
 const BerryPickerTracker = () => {
 
-  const svgString = generateBackgroundSVG("#93c47d")
-
   return (
-    <div
-      id="berry-picker-tracker"
-      className="min-h-screen flex items-center justify-center relative"
-      style={{
-        background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
+    <SectionWrapper0 id="berry-picker-tracker" background="#93c47d">
       <SectionWrapper1>
 
         <ViewTitle mainText="Berry Picker" spanText="Tracker" />
@@ -111,7 +100,7 @@ const BerryPickerTracker = () => {
           </SectionWrapper3>
         </SectionWrapper2>
       </SectionWrapper1>
-    </div>
+    </SectionWrapper0>
   );
 }
 

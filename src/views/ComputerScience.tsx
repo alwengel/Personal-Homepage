@@ -3,32 +3,21 @@ import alexandersComputerSetUp from "../assets/Alexanders_Computer_Set_up_2024.j
 
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph, Image } from "../components";
-
-// framer-motion
-import { motion } from "framer-motion";
-
-// utils
-import { scale } from "../utils/variants";
-import { transition } from "../utils/transition";
-import { generateBackgroundSVG } from "../utils/backgroundSVG";
+import { Reveal, 
+  ViewTitle, 
+  SectionWrapper0,
+  SectionWrapper1, 
+  SectionWrapper2, 
+  SectionWrapper3, 
+  SectionWrapper4, 
+  Paragraph, 
+  Image } from "../components";
 
 
 const ComputerScience = () => {
 
-  const svgString = generateBackgroundSVG("#64c6c7")
-
   return (
-    <div
-      id="computer-science"
-      className="min-h-screen flex items-center justify-center relative"
-      style={{
-        background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
+    <SectionWrapper0 id="computer-science" background="#64c6c7">
       <SectionWrapper1>
 
         <ViewTitle mainText="Computer" spanText="Science" />
@@ -74,7 +63,7 @@ const ComputerScience = () => {
           </SectionWrapper3>
         </SectionWrapper2>
       </SectionWrapper1>
-    </div>
+    </SectionWrapper0>
   );
 }
 

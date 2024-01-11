@@ -3,32 +3,23 @@ import MusicPic from "../assets/Music_Picture.jpg";
 
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph, Image } from "../components";
+import { 
+  Reveal,
+  ViewTitle,
+  SectionWrapper0, 
+  SectionWrapper1,
+  SectionWrapper2,
+  SectionWrapper3,
+  SectionWrapper4,
+  Paragraph,
+  Image } from "../components";
 
-// framer-motion
-import { motion } from "framer-motion";
-
-// utils
-import { scale } from "../utils/variants";
-import { transition } from "../utils/transition";
-import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
 
 const Arts = () => {
 
-  const svgString = generateBackgroundSVG("#aa8000")
-
   return (
-    <div
-      id="arts"
-      className="min-h-screen flex items-center justify-center relative"
-      style={{
-        background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
+    <SectionWrapper0 id="arts" background="#aa8000" >
       <SectionWrapper1>
 
         <ViewTitle mainText="Arts" mainColor="black"/>
@@ -69,12 +60,12 @@ const Arts = () => {
                 description="Picture 1. Me and my cat"
                 border={true}
               />
-              
+
             </SectionWrapper4>
           </SectionWrapper3>
         </SectionWrapper2>
       </SectionWrapper1>
-    </div>
+    </SectionWrapper0>
   );
 }
 

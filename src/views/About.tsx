@@ -2,38 +2,30 @@
 import skillCircle from "../assets/AboutMeImage.png"
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, Paragraph, Image } from "../components";
-
-// framer-motion
-import { motion } from "framer-motion";
-
-// utils
-
-import { generateBackgroundSVG } from "../utils/backgroundSVG";
+import { 
+  Reveal, 
+  ViewTitle,
+  SectionWrapper0,
+  SectionWrapper1, 
+  SectionWrapper2, 
+  SectionWrapper3, 
+  Paragraph, 
+  Image } from "../components";
 
 
 const About = () => {
 
-  const svgString = generateBackgroundSVG("#Midnight")
-
   return (
-    <div
-      id="about"
-      className="min-h-screen flex items-center justify-center relative"
-      style={{
-        background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
+    <SectionWrapper0 id="about" background="Black">
       <SectionWrapper1>
 
         <ViewTitle mainText="About" spanText="me" spanColor="#ffd966" />
-
+        
         <SectionWrapper2>
           <SectionWrapper3>
+
             <div className="flex-1 xl:max-w-[25%]">
+
               <Reveal>
                 <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
                   Interests
@@ -94,7 +86,7 @@ const About = () => {
           </SectionWrapper2>
 
         </SectionWrapper1>
-    </div>
+      </SectionWrapper0>
   );
 }
 

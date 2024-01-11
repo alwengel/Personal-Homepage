@@ -5,33 +5,27 @@ import thesis from "../assets/Alexander-Engelhardt-Thesis.pdf"
 
 
 // components
-import { Reveal, Button, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper4, Paragraph, Image } from "../components";
+import { 
+  Reveal, 
+  Button, 
+  ViewTitle, 
+  SectionWrapper0,
+  SectionWrapper1, 
+  SectionWrapper2, 
+  SectionWrapper4, 
+  Paragraph, 
+  Image } from "../components";
 
-// framer-motion
-import { motion } from "framer-motion";
 
 // utils
-import { scale } from "../utils/variants";
-import { transition } from "../utils/transition";
-import { generateBackgroundSVG } from "../utils/backgroundSVG";
 import { downloadFile } from "../utils/download";
 
 
 const BachelorsThesis = () => {
 
-  const svgString = generateBackgroundSVG("#A9978B")
 
   return (
-    <div
-      id="computer-science"
-      className="min-h-screen flex items-center justify-center relative"
-      style={{
-        background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
+    <SectionWrapper0 id="BachelorsThesis" background="#A9978B" >
       <SectionWrapper1>
 
         <ViewTitle mainText="Bachelor's" spanText="Thesis"/>
@@ -119,7 +113,7 @@ const BachelorsThesis = () => {
             </SectionWrapper4>
         </SectionWrapper2>
       </SectionWrapper1>
-    </div>
+    </SectionWrapper0>
   );
 }
 

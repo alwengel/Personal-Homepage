@@ -3,32 +3,22 @@ import rotatingEarth from "../assets/Rotating_earth.gif";
 
 
 // components
-import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph, Image } from "../components";
+import { Reveal, 
+  ViewTitle, 
+  SectionWrapper0,
+  SectionWrapper1, 
+  SectionWrapper2, 
+  SectionWrapper3, 
+  SectionWrapper4, 
+  Paragraph, 
+  Image } from "../components";
 
-// framer-motion
-import { motion } from "framer-motion";
-
-// utils
-import { fadeIn, scale } from "../utils/variants";
-import { transition } from "../utils/transition";
-import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
 
 const Geography = () => {
 
-  const svgString = generateBackgroundSVG("#38761d")
-
   return (
-    <div
-      id="geography"
-      className="min-h-screen flex items-center justify-center relative"
-      style={{
-        background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
+    <SectionWrapper0 id="geography" background="#38761d">
       <SectionWrapper1>
 
         <ViewTitle mainText="Geography: " spanText="A Greater Context"/>
@@ -70,7 +60,7 @@ const Geography = () => {
           </SectionWrapper3>
         </SectionWrapper2>
       </SectionWrapper1>
-    </div>
+    </SectionWrapper0>
   );
 }
 

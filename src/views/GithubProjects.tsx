@@ -8,30 +8,31 @@ import mern from "../assets/Mern.png"
 
 
 // components
-import { Reveal, Card, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph, Image, Link } from "../components";
+import { 
+  Reveal, 
+  Card, 
+  ViewTitle,
+  SectionWrapper0, 
+  SectionWrapper1, 
+  SectionWrapper2, 
+  SectionWrapper3, 
+  SectionWrapper4, 
+  Paragraph, 
+  Image, 
+  Link } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
 
-// utils
-import { fadeIn, scale } from "../utils/variants";
 import { transition } from "../utils/transition";
-import { generateBackgroundSVG } from "../utils/backgroundSVG";
+
+import { scale } from "../utils/variants";
 
 const GithubProjects = () => {
-    const svgString = generateBackgroundSVG("#5c7294");
+
   
     return (
-      <div
-        id="berry-picker-tracker"
-        className="min-h-screen flex items-center justify-center relative"
-        style={{
-          background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
+      <SectionWrapper0 id="github-projects" background="#5c7294">
         <SectionWrapper1>
 
           <ViewTitle mainText="Some other" spanText="Projects"/>
@@ -158,7 +159,7 @@ const GithubProjects = () => {
             </SectionWrapper3>
           </SectionWrapper2>  
         </SectionWrapper1>
-      </div>
+      </SectionWrapper0>
     );
   };
   

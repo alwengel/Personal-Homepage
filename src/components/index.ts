@@ -7,7 +7,7 @@ import Reveal from "./Reveal";
 import TopBar from "./TopBar";
 import YouTubeVideo from "./YoutubeVideo";
 import ViewTitle from "./ViewTitle";
-import { SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4 }  from "./SectionWrappers";
+import { SectionWrapper0, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4 }  from "./SectionWrappers";
 import Paragraph from "./Paragraph";
 import Image from "./Image";
 import Link from "./Link";
@@ -22,7 +22,8 @@ export {
     Reveal, 
     TopBar, 
     YouTubeVideo, 
-    ViewTitle, 
+    ViewTitle,
+    SectionWrapper0, 
     SectionWrapper1, 
     SectionWrapper2, 
     SectionWrapper3, 

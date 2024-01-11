@@ -1,8 +1,35 @@
 import React from 'react';
 
+// utils
+import { generateBackgroundSVG } from '../utils/backgroundSVG';
+
+
 interface SectionWrapperProps {
+  id?: string;
+  background?: string;
   children: React.ReactNode;
 }
+
+// SectionWrapper 0
+export const SectionWrapper0: React.FC<SectionWrapperProps> = ({ id, background = 'white', children }) => {
+
+  const svgString = generateBackgroundSVG(background);
+
+  return (
+    <div
+      id={id}
+      className="min-h-screen flex items-center justify-center relative"
+      style={{
+        background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      {children}
+    </div>
+  );
+};
 
 // First SectionWrapper
 export const SectionWrapper1: React.FC<SectionWrapperProps> = ({ children }) => (

@@ -8,7 +8,7 @@ import outlookIcon from "../assets/outlook.icon.svg"
 
 
 // components
-import { SocialMediaIcon, Button, Reveal, Image } from "../components";
+import { SocialMediaIcon, Button, Reveal, Image, SectionWrapper0 } from "../components";
 
 // react-simple-typewriter
 import { Typewriter } from "react-simple-typewriter";
@@ -20,23 +20,12 @@ import { motion } from "framer-motion";
 import { transition } from "../utils/transition";
 import { fadeIn, scale } from "../utils/variants";
 import { downloadFile } from "../utils/download";
-import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
 const Hero = () => {
 
-  const svgString = generateBackgroundSVG("White")
 
   return (
-    <div
-      id="home"
-      className="min-h-screen flex items-center justify-center relative"
-      style={{
-        background: `url("data:image/svg+xml;utf8,${encodeURIComponent(svgString)}")`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no repeat",
-        backgroundSize: "cover",
-      }}
-    >
+    <SectionWrapper0 id="home">
     <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl.items-start gap-12 w-full py-16 px-12">
       <div className="w-full xl:w-fit">
         <motion.h1 
@@ -116,7 +105,7 @@ const Hero = () => {
 
     </div>
 
-  </div>
+  </SectionWrapper0>
   )
 };
 
