@@ -4,10 +4,11 @@ import berryIcon from "../assets/berryPickerTrackerIcon.png"
 
 
 // components
-import { Reveal, YouTubeVideo } from "../components";
+import { Reveal, YouTubeVideo, ViewTitle } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
+
 
 // utils
 import { scale } from "../utils/variants";
@@ -31,13 +32,7 @@ const BerryPickerTracker = () => {
     >
       <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
 
-        <motion.div className="text-center xl:text-start">
-          <Reveal>
-            <h2 className="text-4xl sm:text-5xl lg:text-[64px] font-bold text-textWhite">
-              Berry Picker <span className="text-secondary">Tracker</span>
-            </h2>
-          </Reveal>
-        </motion.div>
+        <ViewTitle mainText="Berry Picker" spanText="Tracker" />
 
         <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-1">
 

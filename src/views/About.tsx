@@ -2,7 +2,7 @@
 import skillCircle from "../assets/AboutMeImage.png"
 
 // components
-import { Reveal } from "../components";
+import { Reveal, ViewTitle } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -29,13 +29,7 @@ const About = () => {
     >
       <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
 
-        <motion.div className="text-center xl:text-start">
-          <Reveal>
-            <h2 className="text-4xl sm:text-5xl lg:text-[64px] font-bold text-textWhite">
-              About <span className="text-secondary" style={{ color: '#ffd966' }}>me</span>
-            </h2>
-          </Reveal>
-        </motion.div>
+        <ViewTitle mainText="About" spanText="me" spanColor="#ffd966" />
 
         <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-1">
           <div className="flex-1 flex flex-col xl:flex-row gap-4">
@@ -59,6 +53,7 @@ const About = () => {
                   embodies my experiences in music and of the world up to this point, mixing pop, rock, jazz, classical, hip hop and ambience. I am also directing/screenwriting a
                   semi-professional surrealistic horror comedy film which is set to release sometime this year.
                 </p>
+
               </Reveal>
             </div>
 

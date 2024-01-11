@@ -5,7 +5,7 @@ import thesis from "../assets/Alexander-Engelhardt-Thesis.pdf"
 
 
 // components
-import { Reveal, Button } from "../components";
+import { Reveal, Button, ViewTitle } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -34,13 +34,7 @@ const BachelorsThesis = () => {
     >
       <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
 
-        <motion.div className="text-center xl:text-start">
-          <Reveal>
-            <h2 className="text-4xl sm:text-5xl lg:text-[64px] font-bold text-textWhite">
-              Bachelor's <span className="text-secondary">Thesis</span>
-            </h2>
-          </Reveal>
-        </motion.div>
+        <ViewTitle mainText="Bachelor's" spanText="Thesis"/>
 
         <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-1">
 

@@ -3,13 +3,13 @@ import MusicPic from "../assets/Music_Picture.jpg";
 
 
 // components
-import { Reveal } from "../components";
+import { Reveal, ViewTitle } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
 
 // utils
-import { fadeIn, scale } from "../utils/variants";
+import { scale } from "../utils/variants";
 import { transition } from "../utils/transition";
 import { generateBackgroundSVG } from "../utils/backgroundSVG";
 
@@ -31,13 +31,7 @@ const Arts = () => {
     >
       <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
 
-        <motion.div className="text-center xl:text-start">
-          <Reveal>
-            <h2 className="text-4xl sm:text-5xl lg:text-[64px] font-bold text-textWhite">
-              <span className="text-secondary">Art</span>
-            </h2>
-          </Reveal>
-        </motion.div>
+        <ViewTitle mainText="Arts" mainColor="black"/>
 
       <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-1">
 

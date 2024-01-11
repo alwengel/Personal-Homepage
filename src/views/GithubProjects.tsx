@@ -8,7 +8,7 @@ import mern from "../assets/Mern.png"
 
 
 // components
-import { Reveal, Card } from "../components";
+import { Reveal, Card, ViewTitle } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -34,13 +34,7 @@ const GithubProjects = () => {
       >
         <div className="max-w-screen-2xl xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
   
-          <motion.div className="text-center xl:text-start">
-            <Reveal>
-              <h2 className="text-4xl sm:text-5xl lg:text-[64px] font-bold text-textWhite">
-                Other <span className="text-secondary">CS</span> Projects
-              </h2>
-            </Reveal>
-          </motion.div>
+          <ViewTitle mainText="Some other" spanText="Projects"/>
   
           <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-1">
             <div className="flex-1 flex flex-col xl:flex-row gap-4">
