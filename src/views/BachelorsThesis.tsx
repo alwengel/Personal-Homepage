@@ -1,13 +1,12 @@
 // assets
 import bachelorFrontPage from "../assets/BachelorFrontPage.png"
-import downloadIcon from "../assets/download-btn-icon.svg"
 import thesis from "../assets/Alexander-Engelhardt-Thesis.pdf"
 
 
 // components
 import { 
   Reveal, 
-  Button, 
+  DownloadButton,
   ViewTitle, 
   SectionWrapper0,
   SectionWrapper1, 
@@ -16,9 +15,6 @@ import {
   Paragraph, 
   Image } from "../components";
 
-
-// utils
-import { downloadFile } from "../utils/download";
 
 
 const BachelorsThesis = () => {
@@ -84,13 +80,11 @@ const BachelorsThesis = () => {
                 <div className="flex-1 flex flex-col items-center justify-center">
                 
                 <Image src={bachelorFrontPage} className="max-w-full sm:max-w-[401px] mb-4"/>
-                    <Button
-                    icon={downloadIcon}
-                    onClick={() => downloadFile({ fileUrl: thesis, fileName: 'Alexander-Engelhardt-Thesis.pdf' })}
-                    
-                    >
-                    Download Thesis
-                    </Button>
+                    <DownloadButton 
+                      file={thesis}
+                      filename="Alexander_Engelhardt_Thesis.pdf"
+                      ButtonText="Thesis"
+                    />
                 </div>
 
                 <div className="mb-4" />

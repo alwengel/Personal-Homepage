@@ -1,4 +1,5 @@
 import Button from "./Button";
+import DownloadButton from "./DownloadButton";
 import Menu from "./Menu";
 import SocialMediaIcon from "./SocialMediaIcon";
 import Card from "./Card";
@@ -14,7 +15,8 @@ import Link from "./Link";
 
 
 export { 
-    Button, 
+    Button,
+    DownloadButton,
     Menu, 
     SocialMediaIcon, 
     Card, 

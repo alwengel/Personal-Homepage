@@ -1,6 +1,5 @@
 // assets
 import alexanderProfilePic from "../assets/Alexander_Profile_Pic.jpg";
-import downloadIcon from "../assets/download-btn-icon.svg";
 import cv from "../assets/Alexander_Engelhardt_CV.pdf"
 import githubIcon from "../assets/githubIcon.svg"
 import linkedInIcon from "../assets/linkedInIcon.svg"
@@ -8,7 +7,12 @@ import outlookIcon from "../assets/outlook.icon.svg"
 
 
 // components
-import { SocialMediaIcon, Button, Reveal, Image, SectionWrapper0 } from "../components";
+import { 
+  SocialMediaIcon, 
+  DownloadButton,
+  Reveal, 
+  Image, 
+  SectionWrapper0 } from "../components";
 
 // react-simple-typewriter
 import { Typewriter } from "react-simple-typewriter";
@@ -93,12 +97,13 @@ const Hero = () => {
             whileInView="visible"
             viewport={{ once: false}}
             className="flex flex-row sm:flex-row items-center gap-6 justify-center">
-            <Button
-              icon={downloadIcon}
-              onClick={() => downloadFile({ fileUrl: cv, fileName: 'Alexander_Engelhardt_CV.pdf' })}
-              >
-              Download CV
-            </Button>
+            
+            <DownloadButton 
+              file={cv}
+              filename="Alexander_Engelhardt_CV.pdf"
+              ButtonText="CV"
+            />
+            
           </motion.div>
       </div>
       </div>
