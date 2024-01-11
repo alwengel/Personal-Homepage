@@ -53,7 +53,7 @@ const Geography = () => {
 
               <Image 
                 src={rotatingEarth}
-                className="max-w-full sm:max-w-[401px]"
+                ImageClassName="max-w-full sm:max-w-[401px]"
                 description="Picture 1. Spinning right round, right round..."
               />
       

@@ -55,7 +55,7 @@ const Hero = () => {
         
         <Image 
           src={alexanderProfilePic}
-          className="max-w-full sm:max-w-[401px] rounded-full block sm:hidden"
+          ImageClassName="max-w-full sm:max-w-[401px] rounded-full block sm:hidden"
         />
         
         <Reveal>
@@ -75,7 +75,7 @@ const Hero = () => {
           </div>
         </Reveal>     
       </div>
-      
+
       <div>
         <div className="flex-1 flex items-center justify-center">
           <motion.img

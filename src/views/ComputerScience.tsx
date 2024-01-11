@@ -56,7 +56,7 @@ const ComputerScience = () => {
 
             <Image 
               src={alexandersComputerSetUp} 
-              className="max-w-full sm:max-w-[401px]"
+              ImageClassName="max-w-full sm:max-w-[401px]"
               border={true}
               description="Picture 1. Me and my set up."
             />

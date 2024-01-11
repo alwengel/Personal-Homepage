@@ -82,7 +82,7 @@ const BerryPickerTracker = () => {
               <Reveal>
                 <Image 
                   src={berryIcon}
-                  className="max-w-full sm:max-w-[401px] mb-2"
+                  ImageClassName="max-w-full sm:max-w-[401px] mb-2"
                   description="Picture 2. The Logo of the berry picker tracker app. An extra thing which I wanted to add to the application was a new logo - so I made one!"
                 />
 

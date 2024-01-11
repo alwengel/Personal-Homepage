@@ -5,14 +5,22 @@ import { transition } from "../utils/transition";
 
 interface ImageProps {
   src: string;
-  className: string;
+  positionClassName?: string;
+  ImageClassName: string;
   alt?: string;
   description?: string;
   border?: boolean;
 }
 
-const Image: React.FC<ImageProps> = ({ src, className, alt="", description="", border=false}) => (
-  <div className="flex-1 flex flex-col items-center justify-center text-center">
+const Image: React.FC<ImageProps> = ({ 
+  src, 
+  positionClassName="flex-1 flex flex-col items-center justify-center text-center",
+  ImageClassName, 
+  alt="", 
+  description="", 
+  border=false}) => (
+
+  <div className={positionClassName}>
     <motion.img
       variants={scale()}
       transition={transition()}
@@ -21,7 +29,7 @@ const Image: React.FC<ImageProps> = ({ src, className, alt="", description="", b
       viewport={{ once: false }}
       src={src}
       alt={alt}
-      className={className}
+      className={ImageClassName}
       style={border ? { border: '2px solid #333' } : {}}
     />
     <div className="max-w-md mx-auto">

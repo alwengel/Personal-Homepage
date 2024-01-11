@@ -56,7 +56,7 @@ const Arts = () => {
 
               <Image 
                 src={MusicPic}
-                className="max-w-full sm:max-w-[401px]"
+                ImageClassName="max-w-full sm:max-w-[401px]"
                 description="Picture 1. Me and my cat"
                 border={true}
               />

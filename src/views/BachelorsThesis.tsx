@@ -36,8 +36,6 @@ const BachelorsThesis = () => {
                 If you are interested you can download the thesis by clicking the download button beneath the picture.
               </Paragraph>
 
-            
-
               <div className="mb-4" />
 
               <Paragraph>
@@ -78,7 +76,7 @@ const BachelorsThesis = () => {
             <SectionWrapper4>
               <Reveal>
                 <div className="flex-1 flex flex-col items-center justify-center">             
-                  <Image src={bachelorFrontPage} className="max-w-full sm:max-w-[401px] mb-4"/>
+                  <Image src={bachelorFrontPage} ImageClassName="max-w-full sm:max-w-[401px] mb-4"/>
                   <DownloadButton 
                     file={thesis}
                     filename="Alexander_Engelhardt_Thesis.pdf"
