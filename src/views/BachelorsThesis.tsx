@@ -77,18 +77,16 @@ const BachelorsThesis = () => {
             
             <SectionWrapper4>
               <Reveal>
-                <div className="flex-1 flex flex-col items-center justify-center">
-                
-                <Image src={bachelorFrontPage} className="max-w-full sm:max-w-[401px] mb-4"/>
-                    <DownloadButton 
-                      file={thesis}
-                      filename="Alexander_Engelhardt_Thesis.pdf"
-                      ButtonText="Thesis"
-                    />
+                <div className="flex-1 flex flex-col items-center justify-center">             
+                  <Image src={bachelorFrontPage} className="max-w-full sm:max-w-[401px] mb-4"/>
+                  <DownloadButton 
+                    file={thesis}
+                    filename="Alexander_Engelhardt_Thesis.pdf"
+                    ButtonText="Thesis"
+                  />
                 </div>
 
-                <div className="mb-4" />
-
+                <div className="mb-5" />
 
                 <Paragraph>
                   An intersting topic which could maybe be more robust against replacement of AI

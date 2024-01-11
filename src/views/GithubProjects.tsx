@@ -12,6 +12,7 @@ import {
   Reveal, 
   Card, 
   ViewTitle,
+  ViewTitleSub,
   SectionWrapper0, 
   SectionWrapper1, 
   SectionWrapper2, 
@@ -66,9 +67,7 @@ const GithubProjects = () => {
   
               <SectionWrapper4>
                 <Reveal>
-                  <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
-                    <span className="text-secondary">Course-Website</span>
-                  </h3>
+                  <ViewTitleSub header="Course-website" color="Black"/>
 
                   <Paragraph>
                     This web application lays the ground for an online course library where one can learn various subjects. It follows a traditional web application structure using
@@ -103,9 +102,7 @@ const GithubProjects = () => {
 
               <SectionWrapper4>
                 <Reveal>
-                  <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
-                    <span className="text-secondary">Bismarck</span>
-                  </h3>
+                <ViewTitleSub header="Bismarck" color="Black"/>
                   <Paragraph>
                     Bismarck is a classic card game which is played between two players each striving to defeat the other through strategy and careful planning.
                     It is a desktop appliction built using Python and Pygame. This was my first programming project using Github and the focus was on good practices
@@ -128,20 +125,18 @@ const GithubProjects = () => {
   
               <SectionWrapper4>
                 <Reveal>
-                    <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
-                        <span className="text-secondary">Full-Stack Open</span>
-                    </h3>
-                    <Paragraph>
-                      This repository contains various projects related to the valued course Full-Stack Open at University of Helsinki. The topics of the course
-                      ranges from basic JavaScript and Node.js to full end-to-end testing, containerization and
-                      continuous development. For greater detail about the visit the Full-Stack Open course webpage {" "}
+                  <ViewTitleSub header="Full-Stack Open" color="Black"/>
+                  <Paragraph>
+                    This repository contains various projects related to the valued course Full-Stack Open at University of Helsinki. The topics of the course
+                    ranges from basic JavaScript and Node.js to full end-to-end testing, containerization and
+                    continuous development. For greater detail about the visit the Full-Stack Open course webpage {" "}
 
-                      <Link 
-                        href="https://fullstackopen.com/en/#course-contents"
-                        linkString="here"
-                      />
-                      .
-                    </Paragraph>
+                    <Link 
+                      href="https://fullstackopen.com/en/#course-contents"
+                      linkString="here"
+                    />
+                    .
+                  </Paragraph>
                 
                   <motion.div
                     variants={scale()}

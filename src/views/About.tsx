@@ -5,6 +5,7 @@ import skillCircle from "../assets/AboutMeImage.png"
 import { 
   Reveal, 
   ViewTitle,
+  ViewTitleSub,
   SectionWrapper0,
   SectionWrapper1, 
   SectionWrapper2, 
@@ -27,9 +28,7 @@ const About = () => {
             <div className="flex-1 xl:max-w-[25%]">
 
               <Reveal>
-                <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
-                  Interests
-                </h3>
+                <ViewTitleSub header="Interests" />
 
                 <div className="mb-4" />
 
@@ -38,6 +37,7 @@ const About = () => {
                   I am studying the Master's Programme in Computer Science at the University of Helsinki with a focus on Software Architecture,
                   Distributed Systems, and Full Stack Development. I also have a minor in geography entailing natural geography, urban planning, and geographical information systems.
                 </Paragraph>
+
                 <div className="mb-4" />
 
                 <Paragraph>
@@ -53,10 +53,8 @@ const About = () => {
 
             <div className="flex-1 xl:max-w-[25%]"> {/* Adjust the max-width as needed */}
               <Reveal>
-                <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
-                  Personality
-                </h3>
-
+                <ViewTitleSub header="Personality" />
+                
                 <div className="mb-4" />
 
                 <Paragraph>

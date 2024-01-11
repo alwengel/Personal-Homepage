@@ -23,7 +23,7 @@ import { motion } from "framer-motion";
 // utils
 import { transition } from "../utils/transition";
 import { fadeIn, scale } from "../utils/variants";
-import { downloadFile } from "../utils/download";
+
 
 const Hero = () => {
 
@@ -75,6 +75,7 @@ const Hero = () => {
           </div>
         </Reveal>     
       </div>
+      
       <div>
         <div className="flex-1 flex items-center justify-center">
           <motion.img
@@ -103,7 +104,7 @@ const Hero = () => {
               filename="Alexander_Engelhardt_CV.pdf"
               ButtonText="CV"
             />
-            
+
           </motion.div>
       </div>
       </div>
