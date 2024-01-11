@@ -3,7 +3,8 @@ import rotatingEarth from "../assets/Rotating_earth.gif";
 
 
 // components
-import { Reveal, 
+import { 
+  Reveal, 
   ViewTitle, 
   SectionWrapper0,
   SectionWrapper1, 
@@ -36,7 +37,6 @@ const Geography = () => {
                   pandemics shut down the whole planet.
                 </Paragraph>
             
-
                 <div className="mb-4" />
 
                 <Paragraph>

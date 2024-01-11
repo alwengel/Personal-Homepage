@@ -36,9 +36,10 @@ const GithubProjects = () => {
                     <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary" style={{ color: 'Black' }}>
                     As this webpage is quite new I still have not had time to create specific views for the majority of my projects. This page links to some of the projects found at my Github account.
                     </p>
+                    
                     <div className="mb-4" />
-                    <div className="flex items-center">
 
+                    <div className="flex items-center">
                       <Link 
                         href="https://github.com/Catrovitch"
                         linkString="Visit my Github page by clicking this link" 
@@ -46,7 +47,6 @@ const GithubProjects = () => {
                       <div className="ml-4">
                           <Image src={githubProfilePic} className="max-w-full sm:max-w-[50px] rounded-full" />
                       </div>
-
                     </div>
                 </Reveal>
                 </div>

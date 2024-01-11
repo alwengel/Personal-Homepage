@@ -3,7 +3,8 @@ import alexandersComputerSetUp from "../assets/Alexanders_Computer_Set_up_2024.j
 
 
 // components
-import { Reveal, 
+import { 
+  Reveal, 
   ViewTitle, 
   SectionWrapper0,
   SectionWrapper1, 
