@@ -8,7 +8,7 @@ import mern from "../assets/Mern.png"
 
 
 // components
-import { Reveal, Card, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4 } from "../components";
+import { Reveal, Card, ViewTitle, SectionWrapper1, SectionWrapper2, SectionWrapper3, SectionWrapper4, Paragraph } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -80,7 +80,7 @@ const GithubProjects = () => {
                     <span className="text-secondary">Course-Website</span>
                   </h3>
 
-                  <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+                  <Paragraph>
                         This web application lays the ground for an online course library where one can learn various subjects. It follows a traditional web application structure using
                         HTML and CSS in the frontend coupled with a Python-managed PostgreSQL backend. The application is built using Flask and is hosted on Fly.io. Visit the webpage {" "}
                         <a
@@ -91,7 +91,7 @@ const GithubProjects = () => {
                         >
                             here
                         </a>.
-                    </p>
+                  </Paragraph>
                 
                   <motion.div
                     variants={scale()}
@@ -114,11 +114,11 @@ const GithubProjects = () => {
                   <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
                     <span className="text-secondary">Bismarck</span>
                   </h3>
-                  <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+                  <Paragraph>
                     Bismarck is a classic card game which is played between two players each striving to defeat the other through strategy and careful planning.
                     It is a desktop appliction built using Python and Pygame. This was my first programming project using Github and the focus was on good practices
                     over fancy graphics and complex mechanics.
-                  </p>
+                  </Paragraph>
                 
                   <motion.div
                     variants={scale()}
@@ -139,7 +139,7 @@ const GithubProjects = () => {
                     <h3 className="text-center xl:text-start text-2xl sm:text-3xl lg:text-4xl font-bold text-textWhite">
                         <span className="text-secondary">Full-Stack Open</span>
                     </h3>
-                    <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary">
+                    <Paragraph>
                         This repository contains various projects related to the valued course Full-Stack Open at University of Helsinki. The topics of the course
                         ranges from basic JavaScript and Node.js to full end-to-end testing, containerization and
                         continuous development. For greater detail about the visit the Full-Stack Open course webpage {" "}
@@ -151,7 +151,7 @@ const GithubProjects = () => {
                         >
                             here
                         </a>.
-                    </p>
+                      </Paragraph>
                 
                   <motion.div
                     variants={scale()}
