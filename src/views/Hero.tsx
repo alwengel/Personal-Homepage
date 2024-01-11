@@ -8,7 +8,7 @@ import outlookIcon from "../assets/outlook.icon.svg"
 
 
 // components
-import { SocialMediaIcon, Button, Reveal } from "../components";
+import { SocialMediaIcon, Button, Reveal, SectionWrapper1 } from "../components";
 
 // react-simple-typewriter
 import { Typewriter } from "react-simple-typewriter";

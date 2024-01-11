@@ -3,7 +3,7 @@ import MusicPic from "../assets/Music_Picture.jpg";
 
 
 // components
-import { Reveal, ViewTitle } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -29,11 +29,11 @@ const Arts = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
+      <SectionWrapper1>
 
         <ViewTitle mainText="Arts" mainColor="black"/>
 
-      <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-1">
+        <SectionWrapper2>
 
   
         <div className="flex-1 flex flex-col xl:flex-row gap-4">
@@ -83,8 +83,8 @@ const Arts = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+        </SectionWrapper2>
+      </SectionWrapper1>
     </div>
   );
 }

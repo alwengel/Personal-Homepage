@@ -8,7 +8,7 @@ import mern from "../assets/Mern.png"
 
 
 // components
-import { Reveal, Card, ViewTitle } from "../components";
+import { Reveal, Card, ViewTitle, SectionWrapper1, SectionWrapper2 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -32,11 +32,11 @@ const GithubProjects = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-1">
+        <SectionWrapper1>
 
           <ViewTitle mainText="Some other" spanText="Projects"/>
   
-          <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-6">
+          <SectionWrapper2>
             <div className="flex-1 flex flex-col xl:flex-row gap-4">
                 <div className="flex-1 max-w-[700px]">
                 <Reveal>
@@ -70,11 +70,8 @@ const GithubProjects = () => {
                 </Reveal>
                 </div>
             </div>
-            </div>
-
-  
-          {/* New Row Starts Here */}
-          <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-6">
+          </SectionWrapper2>
+          <SectionWrapper2>
             <div className="flex-1 flex flex-col xl:flex-row gap-4">
   
               <div className="flex-1">
@@ -170,10 +167,8 @@ const GithubProjects = () => {
                 </Reveal>
               </div>
             </div>
-          </div>
-          {/* New Row Ends Here */}
-  
-        </div>
+          </SectionWrapper2>  
+        </SectionWrapper1>
       </div>
     );
   };

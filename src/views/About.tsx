@@ -2,7 +2,7 @@
 import skillCircle from "../assets/AboutMeImage.png"
 
 // components
-import { Reveal, ViewTitle } from "../components";
+import { Reveal, ViewTitle, SectionWrapper1, SectionWrapper2 } from "../components";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -27,11 +27,11 @@ const About = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="max-w-screen-2xl  xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
+      <SectionWrapper1>
 
         <ViewTitle mainText="About" spanText="me" spanColor="#ffd966" />
 
-        <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-1">
+        <SectionWrapper2>
           <div className="flex-1 flex flex-col xl:flex-row gap-4">
             <div className="flex-1 xl:max-w-[25%]"> {/* Adjust the max-width as needed */}
               <Reveal>
@@ -98,9 +98,9 @@ const About = () => {
               </Reveal>
             </div>
           </div>
-        </div>
+          </SectionWrapper2>
 
-    </div>
+        </SectionWrapper1>
     </div>
   );
 }
