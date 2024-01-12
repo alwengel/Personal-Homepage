@@ -8,14 +8,6 @@ export const fadeIn = (direction: "up" | "down") => {
     }
 };
 
-export const reveal = () => {
-    return {
-        hidden: {
-            left: 0,
-        },
-        visible: { left: "100%" },
-    }
-};
 
 export const scale = () => {
     return {

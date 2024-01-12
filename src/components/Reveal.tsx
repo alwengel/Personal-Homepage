@@ -6,7 +6,6 @@ import { transition } from "../utils/transition";
 
 // react
 import { FC, ReactNode } from "react";
-import { reveal } from "../utils/variants";
 
 
 interface RevealProps {
