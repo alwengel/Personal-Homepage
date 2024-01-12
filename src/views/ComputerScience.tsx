@@ -28,20 +28,13 @@ const ComputerScience = () => {
           <SectionWrapper4>
             <Reveal>        
               <Paragraph>
-                Just some years ago I would not have seen myself loving computer science. Though I had always faired well in all subjects in school
-                I used to feel that my true calling was in arts, people skills and big picture thinking. In upper secondary school I seriously considered 
-                a career as a musician. When studying for the final exams and more specifically Geography, I noticed how I noticed how my increased
-                understanding of the world also led to greater meaning in my artistic works. This led to me applying and getting accepted to the bachelor's 
-                degree in geography.
+                Just a few years ago, I wouldn't have imagined that I would develop a passion for computer science. While I consistently performed well in all school subjects, I initially believed my true calling lay in the arts, people skills, and big-picture thinking. During my time in upper secondary school, I seriously contemplated pursuing a career as a musician. However, as I prepared for the final exams, particularly in Geography, I noticed that my enhanced understanding of the world brought greater depth and meaning to my artistic endeavors. This realization prompted me to apply for and subsequently be accepted into the bachelor's degree program in geography.
               </Paragraph>
 
               <div className="mb-4" />
 
               <Paragraph>
-                Then how come I have ended up studying Computer science? The answer to this is that during my studies of geography I found my self appriciating the
-                technical courses the most as I felt that these gave me the most valuable and tangible skills. This culminated in me switching from the bachelor's 
-                programme in geography to the bachelor's programme in computer science. Ever since I have felt that computer science has given growth to my 
-                character where I not only posess a keen artistic eye, big picture analytical thinking that geography entails, but also robust technical insight.
+                Then how come I have ended up studying Computer Science? The answer to this is that during my studies of geography, I found myself appreciating the technical courses the most, as I felt that these gave me the most valuable and tangible skills. This culminated in me switching from the bachelor's program in geography to the bachelor's program in computer science. Ever since, I have felt that computer science has contributed to my personal growth, where I not only possess a keen artistic eye and the big-picture analytical thinking that geography entails, but also robust technical insight.
               </Paragraph>
 
               <div className="mb-4" />
@@ -49,8 +42,6 @@ const ComputerScience = () => {
               <Paragraph>
                 Scroll down this page to read about some of my projects or other works related to computer science. 
               </Paragraph>
-
-
             </Reveal>
           </SectionWrapper4>
 
@@ -58,7 +49,7 @@ const ComputerScience = () => {
               src={alexandersComputerSetUp} 
               ImageClassName="max-w-full sm:max-w-[401px]"
               border={true}
-              description="Picture 1. Me and my set up."
+              description="Picture 1. Me and my desktop set up."
             />
 
           </SectionWrapper3>

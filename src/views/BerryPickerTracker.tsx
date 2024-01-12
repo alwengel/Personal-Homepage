@@ -34,9 +34,7 @@ const BerryPickerTracker = () => {
             <SectionWrapper4>
               <Reveal>
                 <Paragraph style={{ color: 'Black' }}>
-                    The Berry Picker Tracker is a mobile application that lets a person track their position and share it with a selection of people.
-                    It displays your location on a map and shows the route you have been taking. You can adjust the frequency of location information
-                    sending to save battery. The application also warns you when you enter an area with low connectivity.
+                  The Berry Picker Tracker is a mobile application designed to enable users to track their position and share it with a chosen group of individuals. The app displays the user's location on a map, showcasing the route they have taken. Users have the flexibility to adjust the frequency of location information updates to conserve battery life. Additionally, the application provides warnings when entering areas with low connectivity.
                 </Paragraph>
               
 
@@ -50,30 +48,20 @@ const BerryPickerTracker = () => {
                 <div className="mb-4" />
 
                 <Paragraph>
-                    The application was built as a group project for the course Software Engineering Lab at University of Helsinki. Different from many other course
-                    projects the Berry Picker Tracker appliction is not just a course project, as it is developed for real world usage. The course focuses on
-                    agile practices and DevOps culture. Our project was a continuation project, meaning that we were faced with the most common senario from
-                    the real world - trying to understand someone else's code. 
+                  The Berry Picker Tracker application was developed as a group project for the Software Engineering Lab course at the University of Helsinki. Distinguished from many other course projects, the Berry Picker Tracker is not solely an academic exercise; it is crafted for real-world usage. The course emphasizes agile practices and the DevOps culture. Our project was structured as a continuation project, mirroring a common scenario in the real world where developers are tasked with comprehending and building upon someone else's existing codebase.
                 </Paragraph>
               
                 <div className="mb-4" />
 
                 <Paragraph>
-                    The application is built using Typescript, React Native and Expo. It connects to a Python Fast API Backend where user location data is encrypted 
-                    and stored. The backend runs in a Docker container which was as of then hosted on a University of Helsinki staging server. We also deployed the
-                    application using AWS lambda, but due to costs, architectural challenges and time constraints we focused on other features, leaving deployment 
-                    upgrades to future groups. Another major technical aspect which we undertook was updating several outdated libraries.
-
+                  The application is developed using Typescript, React Native, and Expo. It establishes a connection to a Python Fast API Backend, where user location data is encrypted and stored securely. The backend operates within a Docker container, which, at the time, was hosted on a University of Helsinki staging server. In addition to this, we deployed the application using AWS Lambda. However, due to cost considerations, architectural challenges, and time constraints, we prioritized other features, leaving deployment upgrades for future development groups.
+                  Another significant technical aspect we addressed involved updating several outdated libraries within the application.
                 </Paragraph>
               
                 <div className="mb-4" />
 
                 <Paragraph>
-                    The processes used during the project helped a lot in the development of the application. We started by using a standard scrum set up with sprints
-                    that lasted for around two weeks. At each client meeting we made sure to display only working features and our client. After the client meeting we
-                    always held retros using different techniques for discussing what went well and what could be improved upon. We also held dailes to make sure to
-                    keep everyone up to date. In our group we favoured on-site working, but distance working was freely allowed when needed. In my opinion it was especially
-                    helpful being on-site in the beginning of the project when we learned to know each other and the group dynamics were formed. 
+                  The project benefitted significantly from the processes we implemented during its development. Initially, we adopted a standard Scrum setup with sprints lasting approximately two weeks. During client meetings, we ensured to showcase only functional features to our client. Following each client meeting, we conducted retrospectives using various techniques to discuss both successes and areas for improvement. Daily check-ins were also held to keep everyone updated on the project's progress. While our group generally favored on-site collaboration, we allowed for distance working when necessary. Personally, I found being on-site particularly beneficial in the project's early stages, facilitating team bonding and the establishment of group dynamics.
                 </Paragraph>
               </Reveal>
             </SectionWrapper4>

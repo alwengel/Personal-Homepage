@@ -11,6 +11,7 @@ import mern from "../assets/Mern.png"
 import { 
   Reveal, 
   ViewTitle,
+  Paragraph,
   ProjectQuickLook,
   SectionWrapper0, 
   SectionWrapper1, 
@@ -33,9 +34,10 @@ const GithubProjects = () => {
             <SectionWrapper3>
                 <div className="flex-1 max-w-[700px]">
                 <Reveal>
-                    <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary" style={{ color: 'Black' }}>
-                    As this webpage is quite new I still have not had time to create specific views for the majority of my projects. This page links to some of the projects found at my Github account.
-                    </p>
+
+                    <Paragraph style={{color: 'Black'}}>
+                      As this webpage is quite new I still have not had time to create specific views for the majority of my projects. This page links to some of the projects found at my Github account.
+                    </Paragraph>
 
                     <div className="mb-4" />
 
