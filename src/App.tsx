@@ -50,10 +50,10 @@ function App() {
       <TopBar />
       <>
         <Routes>
-          <Route path="/" Component={HomeView} />
-          <Route path="/computer_science" Component={ComputerScienceView} />
-          <Route path="/geography" Component={GeographyView} />
-          <Route path="/arts" Component={ArtsView} />
+          <Route path="/Personal-Homepage" Component={HomeView} />
+          <Route path="/Personal-Homepage/computer_science" Component={ComputerScienceView} />
+          <Route path="/Personal-Homepage/geography" Component={GeographyView} />
+          <Route path="/Personal-Homepage/arts" Component={ArtsView} />
         </Routes>
       </>
         
