@@ -1,25 +1,15 @@
-//router
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-
-
-
-// views
-import { About, Hero, ComputerScience, Geography, Arts, BachelorsThesis, BerryPickerTracker, GithubProjects } from "./views" 
-
-
-// components
+import React from "react";
+import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { About, Hero, ComputerScience, Geography, Arts, BachelorsThesis, BerryPickerTracker, GithubProjects } from "./views";
 import { Menu, TopBar } from "./components";
-
 
 const HomeView = () => (
   <>
     <Hero />
     <About />
     <Menu />
-    
   </>
-)
+);
 
 const ComputerScienceView = () => (
   <>
@@ -28,34 +18,31 @@ const ComputerScienceView = () => (
     <BerryPickerTracker />
     <GithubProjects />
   </>
-)
+);
 
 const GeographyView = () => (
   <>
     <Geography />
   </>
-)
+);
 
 const ArtsView = () => (
   <>
     <Arts />
   </>
-)
+);
 
 function App() {
   return (
     <Router>
       <TopBar />
-      <>
-        <Routes>
-          <Route path="/Personal-Homepage" element={<HomeView />} />
-          <Route path="/Personal-Homepage/computer_science" element={<ComputerScienceView />} />
-          <Route path="/Personal-Homepage/geography" element={<GeographyView />} />
-          <Route path="/Personal-Homepage/arts" element={<ArtsView />} />
-        </Routes>
-      </>
-        
-        
+
+      <Routes>
+        <Route path="/" element={<HomeView />} />
+        <Route path="/computer_science" element={<ComputerScienceView />} />
+        <Route path="/geography" element={<GeographyView />} />
+        <Route path="/arts" element={<ArtsView />} />
+      </Routes>
     </Router>
   );
 }

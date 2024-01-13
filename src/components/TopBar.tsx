@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 import homePageLogo from "../assets/homepageLogo.png"
-
-// components
 import { Reveal } from "../components";
-// framer-motion
 import { motion } from "framer-motion";
-
 
 const TopBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +14,7 @@ const TopBar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      // Add any scroll-related logic here
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -30,34 +28,31 @@ const TopBar: React.FC = () => {
     <div className="relative">
       <nav className="bg-gray-700 p-1 fixed top-0 left-0 right-0 z-10 bg-opacity-50 backdrop-filter backdrop-blur">
         <div className="container mx-auto flex justify-between items-center">
-        <Reveal>
-          <a href="/Personal-Homepage" className="flex items-center group">
+          <Reveal>
+            <Link to="/" className="flex items-center group">
+              <motion.img
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                src={homePageLogo}
+                alt=""
+                className="max-h-12 max-w-12 rounded-full transition-transform duration-300 transform group-hover:scale-110"
+              />
+            </Link>
+          </Reveal>
 
-            <motion.img
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              src={homePageLogo}
-              alt=""
-              className="max-h-12 max-w-12 rounded-full transition-transform duration-300 transform group-hover:scale-110"
-            />
-          </a>
-        </Reveal>
-
-
-  
           <div className="hidden md:flex space-x-4">
-            <a href="/Personal-Homepage/computer_science" className="text-white hover:text-gray-300">
+            <Link to="/computer_science" className="text-white hover:text-gray-300">
               Computer Science
-            </a>
-            <a href="/Personal-Homepage/geography" className="text-white hover:text-gray-300">
+            </Link>
+            <Link to="/geography" className="text-white hover:text-gray-300">
               Geography
-            </a>
-            <a href="/Personal-Homepage/arts" className="text-white hover:text-gray-300">
+            </Link>
+            <Link to="/arts" className="text-white hover:text-gray-300">
               Arts
-            </a>
+            </Link>
           </div>
-  
+
           <div className="md:hidden">
             <button
               className={`text-white ${isOpen ? 'bg-gray-600' : ''} focus:outline-none`}
@@ -81,24 +76,22 @@ const TopBar: React.FC = () => {
           </div>
         </div>
       </nav>
-  
+
       {isOpen && (
         <div className="md:hidden fixed top-16 left-0 right-0 bg-gray-600 p-4 z-20 bg-opacity-70 backdrop backdrop-blur">
-          <a href="/Personal-Homepage/computer_science" className="block text-white py-2 hover:text-gray-300">
+          <Link to="/computer_science" className="block text-white py-2 hover:text-gray-300">
             Computer Science
-          </a>
-          <a href="/Personal-Homepage/geography" className="block text-white py-2 hover:text-gray-300">
+          </Link>
+          <Link to="/geography" className="block text-white py-2 hover:text-gray-300">
             Geography
-          </a>
-          <a href="/Personal-Homepage/arts" className="block text-white py-2 hover:text-gray-300">
+          </Link>
+          <Link to="/arts" className="block text-white py-2 hover:text-gray-300">
             Arts
-          </a>
+          </Link>
         </div>
       )}
     </div>
   );
-  
 };
 
 export default TopBar;
-
