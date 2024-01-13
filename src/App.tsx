@@ -49,11 +49,11 @@ function App() {
     <Router>
       <TopBar />
       <>
-        <Routes>
-          <Route path="/Personal-Homepage" Component={HomeView} />
-          <Route path="/Personal-Homepage/computer_science" Component={ComputerScienceView} />
-          <Route path="/Personal-Homepage/geography" Component={GeographyView} />
-          <Route path="/Personal-Homepage/arts" Component={ArtsView} />
+      <Routes>
+          <Route path="/Personal-Homepage" element={<HomeView />} />
+          <Route path="/Personal-Homepage/computer_science" element={<ComputerScienceView />} />
+          <Route path="/Personal-Homepage/geography" element={<GeographyView />} />
+          <Route path="/Personal-Homepage/arts" element={<ArtsView />} />
         </Routes>
       </>
         
