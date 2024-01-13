@@ -1,5 +1,7 @@
-// Use HashRouter instead of BrowserRouter
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+//router
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+
 
 
 // views
@@ -43,19 +45,21 @@ const ArtsView = () => (
 
 
 function App() {
-  
   return (
     <Router>
       <TopBar />
-      <Routes>
-        <Route path="/" element={<HomeView />} />
-        <Route path="/computer_science" element={<ComputerScienceView />} />
-        <Route path="/geography" element={<GeographyView />} />
-        <Route path="/arts" element={<ArtsView />} />
-      </Routes>
+      <>
+        <Routes>
+          <Route path="/Personal-Homepage" element={<HomeView />} />
+          <Route path="/Personal-Homepage/computer_science" element={<ComputerScienceView />} />
+          <Route path="/Personal-Homepage/geography" element={<GeographyView />} />
+          <Route path="/Personal-Homepage/arts" element={<ArtsView />} />
+        </Routes>
+      </>
+        
+        
     </Router>
   );
 }
-
 
 export default App;
