@@ -84,13 +84,13 @@ const TopBar: React.FC = () => {
   
       {isOpen && (
         <div className="md:hidden fixed top-16 left-0 right-0 bg-gray-600 p-4 z-20 bg-opacity-70 backdrop backdrop-blur">
-          <a href="/computer_science" className="block text-white py-2 hover:text-gray-300">
+          <a href="/Personal-Homepage/computer_science" className="block text-white py-2 hover:text-gray-300">
             Computer Science
           </a>
-          <a href="/geography" className="block text-white py-2 hover:text-gray-300">
+          <a href="/Personal-Homepage/geography" className="block text-white py-2 hover:text-gray-300">
             Geography
           </a>
-          <a href="/arts" className="block text-white py-2 hover:text-gray-300">
+          <a href="/Personal-Homepage/arts" className="block text-white py-2 hover:text-gray-300">
             Arts
           </a>
         </div>
