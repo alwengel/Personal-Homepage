@@ -42,8 +42,6 @@ const ArtsView = () => (
   </>
 )
 
-
-
 function App() {
   return (
     <Router>
