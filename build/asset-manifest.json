@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-homepage/static/css/main.81491bbb.css",
-    "main.js": "/personal-homepage/static/js/main.e1df170b.js",
+    "main.js": "/personal-homepage/static/js/main.5833ac6d.js",
     "static/media/Rotating_earth.gif": "/personal-homepage/static/media/Rotating_earth.6ca69efc968696656348.gif",
     "static/media/AboutMeImage.png": "/personal-homepage/static/media/AboutMeImage.04bf9b4ef2d44d6dcf9c.png",
     "static/media/Alexander-Engelhardt-Thesis.pdf": "/personal-homepage/static/media/Alexander-Engelhardt-Thesis.b310f89bd3e2f9eea7ac.pdf",
@@ -22,10 +22,10 @@
     "static/media/linkedInIcon.svg": "/personal-homepage/static/media/linkedInIcon.8b57dac76bcea862dcbdb50367202d46.svg",
     "static/media/download-btn-icon.svg": "/personal-homepage/static/media/download-btn-icon.db00ff1fa6f1d172b12f9e1441c6d79c.svg",
     "main.81491bbb.css.map": "/personal-homepage/static/css/main.81491bbb.css.map",
-    "main.e1df170b.js.map": "/personal-homepage/static/js/main.e1df170b.js.map"
+    "main.5833ac6d.js.map": "/personal-homepage/static/js/main.5833ac6d.js.map"
   },
   "entrypoints": [
     "static/css/main.81491bbb.css",
-    "static/js/main.e1df170b.js"
+    "static/js/main.5833ac6d.js"
   ]
 }
