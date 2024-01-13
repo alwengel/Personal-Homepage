@@ -1,6 +1,6 @@
 {
-  "name": "Personal-Homepage",
-  "homepage": "https://Catrovitch.github.io/Personal-Homepage",
+  "name": "personal-homepage",
+  "homepage": "https://Catrovitch.github.io/personal-homepage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
