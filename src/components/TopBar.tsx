@@ -31,7 +31,7 @@ const TopBar: React.FC = () => {
       <nav className="bg-gray-700 p-1 fixed top-0 left-0 right-0 z-10 bg-opacity-50 backdrop-filter backdrop-blur">
         <div className="container mx-auto flex justify-between items-center">
         <Reveal>
-          <a href="/" className="flex items-center group">
+          <a href="/Personal-Homepage" className="flex items-center group">
 
             <motion.img
               initial="hidden"
@@ -47,13 +47,13 @@ const TopBar: React.FC = () => {
 
   
           <div className="hidden md:flex space-x-4">
-            <a href="/computer_science" className="text-white hover:text-gray-300">
+            <a href="/Personal-Homepage/computer_science" className="text-white hover:text-gray-300">
               Computer Science
             </a>
-            <a href="/geography" className="text-white hover:text-gray-300">
+            <a href="/Personal-Homepage/geography" className="text-white hover:text-gray-300">
               Geography
             </a>
-            <a href="/arts" className="text-white hover:text-gray-300">
+            <a href="/Personal-Homepage/arts" className="text-white hover:text-gray-300">
               Arts
             </a>
           </div>
