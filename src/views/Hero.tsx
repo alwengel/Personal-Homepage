@@ -61,7 +61,7 @@ const Hero = () => {
         <Reveal>
           <div className="my-1 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
             <SocialMediaIcon imgSrc={outlookIcon} title="Email" />
-            <div className="mb-1 sm:mb-0"><strong>Email:</strong> alexander.engelhardt{"(at)"}helsinki.fi</div>
+            <div className="mb-1 sm:mb-0"><strong>Email:</strong> alexander-engelhardt{"(at)"}outlook.com</div>
           </div>
 
           <div className="my-1 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
