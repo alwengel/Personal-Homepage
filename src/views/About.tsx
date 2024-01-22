@@ -33,7 +33,7 @@ const About = () => {
                 <div className="mb-4" />
 
                 <Paragraph>
-                  Hi, my name is Alexander Engelhardt. I have a wide range of interests, spanning from philosophy and history to arts and technology. I am currently studying the Master's Programme in Computer Science at the University of Helsinki, with a focus on Software Architecture, Distributed Systems, and Full Stack Development. Additionally, I have a minor in geography, which includes natural geography, urban planning, and geographical information systems.
+                  Hi, my name is Alexander Engelhardt. I have a wide range of interests, spanning from philosophy and history to arts and technology. I am currently studying the Master's Programme in Computer Science at the University of Helsinki, with a focus on Software Architecture, Distributed Systems, and Full Stack Development. Additionally, I have a minor in geography, which includes physical geography, urban planning, and geographical information systems.
                 </Paragraph>
 
                 <div className="mb-4" />
@@ -58,14 +58,21 @@ const About = () => {
                 <div className="mb-4" />
 
                 <Paragraph>
-                  As a person, I am driven by my desire to create. I love nothing more than to concentrate on a project, striving to make it the best it can be. This passion is evident in my extensive history of consistently having various projects in progress.
+                  As a person, I am driven by my
+                  desire to create. I love nothing
+                  more than to concentrate on a
+                  project, striving to make it the
+                  best it can be. The only thing
+                  better is to do the same with
+                  other like minded people.
                 </Paragraph>
 
                 <div className="mb-4" />
 
                 <Paragraph>
-                Besides creativity, I thoroughly enjoy collaborating with others. In various projects, I often find myself in leadership positions, a result of a combination of innovative ideas and effective communication skills. I believe that the key to effective leadership lies in maintaining a balance between assertiveness and the humility to listen to others, fostering a collaborative decision-making process within the group.
-                Another perspective on leadership that resonates with me is the idea that a good leader is also a good servant. I interpret this concept to mean that effective leadership involves empowering team members to reach their fullest potential. This aligns with the wisdom of Lao Tzu, who emphasized the following quote:
+                  In group projects I often find myself in creative- and organizing leadership positions. I believe that the key to effective leadership lies in the balance between empathy and discipline.
+                  It needs to be clear that agreements are expected to hold. At the same time a good leader is also a good servant. I interpret this old saying to mean that a good leader reaches his goals by empowering each team member to reach their own personal best potential.
+                  This aligns with the wisdom of Lao Tzu:
                 </Paragraph>
 
                 <div className="mb-4" />

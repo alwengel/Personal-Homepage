@@ -6,7 +6,7 @@ interface ParagraphProps {
 }
 
 const Paragraph: React.FC<ParagraphProps> = ({ style, children }) => (
-  <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary" style={style}>
+  <p className="text-left xl:text-start text-base sm:text-lg text-textSecondary" style={{ ...style, textAlign: 'justify' }}>
     {children}
   </p>
 );
