@@ -1,13 +1,13 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { About, Hero, ComputerScience, Geography, Arts, BachelorsThesis, BerryPickerTracker, GithubProjects } from "./views";
-import { Menu, TopBar } from "./components";
+import { TopBar } from "./components";
 
 const HomeView = () => (
   <>
     <Hero />
     <About />
-    <Menu />
+
   </>
 );
 
