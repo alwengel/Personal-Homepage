@@ -65,8 +65,8 @@ const Hero = () => {
           </div>
 
           <div className="my-1 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
-            <SocialMediaIcon imgSrc={linkedInIcon} title="LinkedIn" />
-            <div className="mb-1 sm:mb-0"><strong>LinkedIn:</strong> .......</div>
+            <SocialMediaIcon imgSrc={linkedInIcon} title="LinkedIn" href="https://www.linkedin.com/in/alexander-engelhardt-8940072b0"/>
+            <div className="mb-1 sm:mb-0"><strong>LinkedIn:</strong> Alexander Engelhardt</div>
           </div>
 
           <div className="my-1 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
