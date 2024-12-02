@@ -29,16 +29,17 @@ const TopBar: React.FC = () => {
       <nav className="bg-gray-700 p-1 fixed top-0 left-0 right-0 z-10 bg-opacity-50 backdrop-filter backdrop-blur">
         <div className="container mx-auto flex justify-between items-center">
           <Reveal>
-            <Link to="/" className="flex items-center group">
-              <motion.img
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                src={homePageLogo}
-                alt=""
-                className="max-h-12 max-w-12 rounded-full transition-transform duration-300 transform group-hover:scale-110"
-              />
-            </Link>
+          <Link to="/" className="flex items-center group">
+            <motion.img
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              src={homePageLogo}
+              alt=""
+              className="max-h-12 max-w-12 rounded-md transition-transform duration-300 transform group-hover:scale-110"
+            />
+          </Link>
+
           </Reveal>
 
           <div className="hidden md:flex space-x-4">

@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.81491bbb.css",
-    "main.js": "/static/js/main.bb488260.js",
+    "main.css": "/static/css/main.77b2ca00.css",
+    "main.js": "/static/js/main.5e540016.js",
     "static/media/Rotating_earth.gif": "/static/media/Rotating_earth.6ca69efc968696656348.gif",
+    "static/media/homepageLogo.png": "/static/media/homepageLogo.1b1c37aab72225331b26.png",
     "static/media/AboutMeImage.png": "/static/media/AboutMeImage.e8f71e62941fbdb3031d.png",
     "static/media/Alexander-Engelhardt-Thesis.pdf": "/static/media/Alexander-Engelhardt-Thesis.b310f89bd3e2f9eea7ac.pdf",
     "static/media/berryPickerTrackerIcon.png": "/static/media/berryPickerTrackerIcon.3e2d7e56ac4359fc28e2.png",
-    "static/media/homepageLogo.png": "/static/media/homepageLogo.982c26ba3a7168e49d7a.png",
     "static/media/BabyAndUniverse.png": "/static/media/BabyAndUniverse.ffd55b8e533069fab626.png",
     "static/media/Alexander_Profile_Pic.jpg": "/static/media/Alexander_Profile_Pic.feed9d87d1e4ce178707.jpg",
     "static/media/Alexanders_Computer_Set_up_2024.jpg": "/static/media/Alexanders_Computer_Set_up_2024.839299722aa8d200a71b.jpg",
@@ -21,11 +21,11 @@
     "static/media/linkedInIcon.svg": "/static/media/linkedInIcon.8b57dac76bcea862dcbdb50367202d46.svg",
     "index.html": "/index.html",
     "static/media/download-btn-icon.svg": "/static/media/download-btn-icon.db00ff1fa6f1d172b12f9e1441c6d79c.svg",
-    "main.81491bbb.css.map": "/static/css/main.81491bbb.css.map",
-    "main.bb488260.js.map": "/static/js/main.bb488260.js.map"
+    "main.77b2ca00.css.map": "/static/css/main.77b2ca00.css.map",
+    "main.5e540016.js.map": "/static/js/main.5e540016.js.map"
   },
   "entrypoints": [
-    "static/css/main.81491bbb.css",
-    "static/js/main.bb488260.js"
+    "static/css/main.77b2ca00.css",
+    "static/js/main.5e540016.js"
   ]
 }
