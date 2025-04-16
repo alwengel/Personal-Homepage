@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.77b2ca00.css",
-    "main.js": "/static/js/main.75c56042.js",
+    "main.css": "/static/css/main.4d390332.css",
+    "main.js": "/static/js/main.ee92f8a5.js",
     "static/media/Rotating_earth.gif": "/static/media/Rotating_earth.6ca69efc968696656348.gif",
+    "static/media/Neural_Router__A_System_for_Structure_Agnostic_and_Configuration_Free_Content_Delivery.pdf": "/static/media/Neural_Router__A_System_for_Structure_Agnostic_and_Configuration_Free_Content_Delivery.d1bebaa00e1116a0147c.pdf",
     "static/media/AboutMeImage.png": "/static/media/AboutMeImage.e8f71e62941fbdb3031d.png",
     "static/media/Alexander-Engelhardt-Thesis.pdf": "/static/media/Alexander-Engelhardt-Thesis.b310f89bd3e2f9eea7ac.pdf",
+    "static/media/symbolic_head.png": "/static/media/symbolic_head.df51550214ca91bfc25b.png",
     "static/media/berryPickerTrackerIcon.png": "/static/media/berryPickerTrackerIcon.3e2d7e56ac4359fc28e2.png",
+    "static/media/Current_developments_in_Large_Language_Model_based_Debugging_2023_2024_Alexander_Engelhardt.pdf": "/static/media/Current_developments_in_Large_Language_Model_based_Debugging_2023_2024_Alexander_Engelhardt.94b4d0367db3e72cbd78.pdf",
     "static/media/BabyAndUniverse.png": "/static/media/BabyAndUniverse.ffd55b8e533069fab626.png",
+    "static/media/Current_developments.png": "/static/media/Current_developments.173535eda4eaebbc910c.png",
     "static/media/Alexander_Profile_Pic.jpg": "/static/media/Alexander_Profile_Pic.feed9d87d1e4ce178707.jpg",
     "static/media/Alexanders_Computer_Set_up_2024.jpg": "/static/media/Alexanders_Computer_Set_up_2024.839299722aa8d200a71b.jpg",
     "static/media/Music_Picture.jpg": "/static/media/Music_Picture.1a519954235852dba817.jpg",
@@ -15,17 +19,18 @@
     "static/media/Bismarck.png": "/static/media/Bismarck.9fec8b7e640d58f8aa1c.png",
     "static/media/Alexander_Engelhardt_CV.pdf": "/static/media/Alexander_Engelhardt_CV.c955c06a57674b25a276.pdf",
     "static/media/ManuliProfilePic.png": "/static/media/ManuliProfilePic.ab28a4599bfc0d8219c9.png",
+    "static/media/MastersFrontPage.png": "/static/media/MastersFrontPage.93760a81635159147ea7.png",
     "static/media/BachelorFrontPage.png": "/static/media/BachelorFrontPage.924b528d5436db323c71.png",
     "static/media/outlook.icon.svg": "/static/media/outlook.icon.d3f08b4f809ee6d8c56657e84bbf5ca6.svg",
     "static/media/githubIcon.svg": "/static/media/githubIcon.9f00fa0d5fbcc90d12ef3fddd45f2456.svg",
     "static/media/linkedInIcon.svg": "/static/media/linkedInIcon.8b57dac76bcea862dcbdb50367202d46.svg",
     "index.html": "/index.html",
     "static/media/download-btn-icon.svg": "/static/media/download-btn-icon.db00ff1fa6f1d172b12f9e1441c6d79c.svg",
-    "main.77b2ca00.css.map": "/static/css/main.77b2ca00.css.map",
-    "main.75c56042.js.map": "/static/js/main.75c56042.js.map"
+    "main.4d390332.css.map": "/static/css/main.4d390332.css.map",
+    "main.ee92f8a5.js.map": "/static/js/main.ee92f8a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.77b2ca00.css",
-    "static/js/main.75c56042.js"
+    "static/css/main.4d390332.css",
+    "static/js/main.ee92f8a5.js"
   ]
 }
