@@ -24,24 +24,14 @@ const MastersThesis = () => {
   return (
 
     <SectionWrapper0 id="MastersThesis" background="#FFFFF9" >
-        <Reveal>
-            <div
-        style={{
-        border: '4px solid green',
-        borderRadius: '1rem',
-        margin: '1rem',
-        paddingLeft: '18rem',
-        paddingRight: '18rem',
-        }}
-        >
       <SectionWrapper1>
 
-        <ViewTitle mainText="" spanText="Master's Thesis"/>
+        <ViewTitle mainText="Master's" spanText="Thesis" mainColor="Black" spanColor="Green"/>
 
         <SectionWrapper2>
         <SectionWrapper4>
             <Reveal>
-                <h2 className="text-xl font-semibold text-left mb-1">Abstract</h2>
+                <h2 className="text-xl font-semibold text-left mb-1 text-green-600">Abstract</h2>
                 <Paragraph style={{ color: 'Black' }}>
                 As data volumes and complexity continue to grow, the development of effective data management solutions that work on a scale becomes increasingly challenging. Recent advances in artificial intelligence provide new tools to address this challenge by enabling software capable of handling diverse data in an intelligent and intent-driven manner.
                 <div className="mb-2" />
@@ -53,7 +43,7 @@ const MastersThesis = () => {
                 </Paragraph>
 
                 <div className="mb-4" />
-                <h2 className="text-xl font-semibold text-left mb-1">Writing the Thesis</h2>
+                <h2 className="text-xl font-semibold text-left mb-1 text-green-600">Writing the Thesis</h2>
                 <Paragraph style={{ color: 'Grey' }}>
                 Writing this thesis has been an invaluable learning experience. It has deepened my technical
                 knowledge and sparked several new interests and ideas. It has also refined my skills
@@ -128,8 +118,6 @@ const MastersThesis = () => {
             </SectionWrapper4>
         </SectionWrapper2>
       </SectionWrapper1>
-      </div>
-      </Reveal>
     </SectionWrapper0>
 
   );
