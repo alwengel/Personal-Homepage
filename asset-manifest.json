@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7142a2f3.css",
-    "main.js": "/static/js/main.4efcc0fc.js",
+    "main.js": "/static/js/main.ef9837c8.js",
     "static/media/Rotating_earth.gif": "/static/media/Rotating_earth.6ca69efc968696656348.gif",
     "static/media/Neural_Router__A_System_for_Structure_Agnostic_and_Configuration_Free_Content_Delivery.pdf": "/static/media/Neural_Router__A_System_for_Structure_Agnostic_and_Configuration_Free_Content_Delivery.d1bebaa00e1116a0147c.pdf",
     "static/media/AboutMeImage.png": "/static/media/AboutMeImage.e8f71e62941fbdb3031d.png",
@@ -27,10 +27,10 @@
     "index.html": "/index.html",
     "static/media/download-btn-icon.svg": "/static/media/download-btn-icon.db00ff1fa6f1d172b12f9e1441c6d79c.svg",
     "main.7142a2f3.css.map": "/static/css/main.7142a2f3.css.map",
-    "main.4efcc0fc.js.map": "/static/js/main.4efcc0fc.js.map"
+    "main.ef9837c8.js.map": "/static/js/main.ef9837c8.js.map"
   },
   "entrypoints": [
     "static/css/main.7142a2f3.css",
-    "static/js/main.4efcc0fc.js"
+    "static/js/main.ef9837c8.js"
   ]
 }
