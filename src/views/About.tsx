@@ -33,7 +33,7 @@ const About = () => {
                 <div className="mb-4" />
 
                 <Paragraph>
-                  Hi, my name is Alexander Engelhardt. I have a wide range of interests, spanning from philosophy and history to arts and technology. I am currently studying the Master's Programme in Computer Science at the University of Helsinki, with a focus on Software Architecture, Distributed Systems, and Full Stack Development. Additionally, I have a minor in geography, which includes physical geography, urban planning, and geographical information systems.
+                  Hi, my name is Alexander Engelhardt. I have a wide range of interests, spanning from philosophy and history to arts and technology. I am currently pursuing a PhD in Computer Science at the University of Helsinki within the Research-to-Business project AgentFormers. The focus of my PhD is infusing artificial intelligence into distributed environment communication to enable complex-event processing. Additionally, I have a background in Full-Stack web development, and a minor in geography which includes physical geography, urban planning, and geographical information systems.
                 </Paragraph>
 
                 <div className="mb-4" />
