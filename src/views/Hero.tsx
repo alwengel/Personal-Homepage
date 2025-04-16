@@ -70,8 +70,8 @@ const Hero = () => {
           </div>
 
           <div className="my-1 flex flex-col sm:flex-row items-center gap-2 sm:gap-6 justify-center xl:justify-start text-center">
-            <SocialMediaIcon imgSrc={githubIcon} title="Github" href="https://github.com/Cathardt"/>
-            <div className="mb-1 sm:mb-0"><strong>Github:</strong> Cathardt</div>
+            <SocialMediaIcon imgSrc={githubIcon} title="Github" href="https://github.com/alwengel"/>
+            <div className="mb-1 sm:mb-0"><strong>Github:</strong> alwengel</div>
           </div>
         </Reveal>     
       </div>

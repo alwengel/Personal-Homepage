@@ -1,6 +1,6 @@
 import React from "react";
-import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { About, Hero, ComputerScience, Geography, Arts, BachelorsThesis, BerryPickerTracker, GithubProjects } from "./views";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { About, Hero, ComputerScience, Geography, Arts, BachelorsThesis, CurrentDevelopments, BerryPickerTracker, GithubProjects } from "./views";
 import { TopBar } from "./components";
 
 const HomeView = () => (
@@ -14,6 +14,7 @@ const HomeView = () => (
 const ComputerScienceView = () => (
   <>
     <ComputerScience />
+    <CurrentDevelopments />
     <BachelorsThesis />
     <BerryPickerTracker />
     <GithubProjects />
