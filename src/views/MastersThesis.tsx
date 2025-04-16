@@ -31,7 +31,9 @@ const MastersThesis = () => {
         <SectionWrapper2>
         <SectionWrapper4>
             <Reveal>
-                <h2 className="text-xl font-semibold text-left mb-1 text-green-600">Abstract</h2>
+                <h2 className="text-xl font-semibold text-left mb-1" style={{ color: 'Green' }}>
+                    Abstract
+                </h2>
                 <Paragraph style={{ color: 'Black' }}>
                 As data volumes and complexity continue to grow, the development of effective data management solutions that work on a scale becomes increasingly challenging. Recent advances in artificial intelligence provide new tools to address this challenge by enabling software capable of handling diverse data in an intelligent and intent-driven manner.
                 <div className="mb-2" />
@@ -43,7 +45,9 @@ const MastersThesis = () => {
                 </Paragraph>
 
                 <div className="mb-4" />
-                <h2 className="text-xl font-semibold text-left mb-1 text-green-600">Writing the Thesis</h2>
+                <h2 className="text-xl font-semibold text-left mb-1" style={{ color: 'Green' }}>
+                    Writing the Thesis
+                </h2>
                 <Paragraph style={{ color: 'Grey' }}>
                 Writing this thesis has been an invaluable learning experience. It has deepened my technical
                 knowledge and sparked several new interests and ideas. It has also refined my skills
