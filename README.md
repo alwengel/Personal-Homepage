@@ -20,3 +20,4 @@ The branch 'gh-pages' has a copy of /build and is used to deploy using github pa
 ```
 npm run deploy
 ```
+5. Make sure the right domain is selected in **settings > pages**.
