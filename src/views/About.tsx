@@ -44,7 +44,7 @@ const About = () => {
 
               </Reveal>
             </div>
-
+        
             <Image 
               src={skillCircle}
               positionClassName="flex-1 flex flex-col"
